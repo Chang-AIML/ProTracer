@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="ProTracer: Proprioception-Guided Failure Diagnosis in Robot Manipulation">
   <title>ProTracer | Proprioception-Guided Failure Diagnosis</title>
-  <link rel="stylesheet" href="styles.css?v=10">
+  <link rel="stylesheet" href="styles.css?v=12">
 </head>
 <body>
   <aside class="toc" aria-label="Contents">
@@ -155,27 +155,29 @@
       <div class="result-block">
         <h3 class="result-subheading">Runtime Detector Comparison</h3>
         <p class="result-description">For causal runtime detectors, the first alarm is evaluated as a failure-onset estimate. ProTracer remains zero-shot and is not used as a policy-stopping detector.</p>
-        <article class="analysis-card runtime-card">
-          <div class="table-scroll compact-table">
-            <table>
-              <thead>
-                <tr><th rowspan="2">Detector</th><th colspan="3">Failure Detection</th><th colspan="3">Failure Onset</th></tr>
-                <tr><th>AUROC ↑</th><th>TPR ↑</th><th>TNR ↑</th><th>MAE ↓</th><th>@0.5s ↑</th><th>@1s ↑</th></tr>
-              </thead>
-              <tbody>
-                <tr><td>RND-OE</td><td>0.57</td><td>44.83</td><td>79.59</td><td>5.03</td><td>0.74</td><td>2.96</td></tr>
-                <tr><td>FIDeL</td><td>0.60</td><td>34.73</td><td>95.92</td><td>5.27</td><td>0.25</td><td>1.97</td></tr>
-                <tr><td>RynnValue-8B</td><td>0.85</td><td>38.18</td><td>93.88</td><td>2.61</td><td>1.72</td><td>5.67</td></tr>
-                <tr><td>GRU (Onset Supervised)</td><td>0.74</td><td>71.43</td><td>65.31</td><td>2.08</td><td>18.97</td><td>33.99</td></tr>
-                <tr class="ours"><td><strong>ProTracer (zero-shot)</strong></td><td>–</td><td><strong>99.26</strong></td><td><strong>100.00</strong></td><td><strong>0.59</strong></td><td><strong>71.18</strong></td><td><strong>81.03</strong></td></tr>
-              </tbody>
-            </table>
-          </div>
-        </article>
-        <figure class="figure-card runtime-figure" id="runtime-error-figure">
-          <img src="assets/runtime-first-alarm-error.png" alt="Distribution of first-alarm timing error for runtime failure detectors and ProTracer.">
-          <figcaption><strong>First-alarm error relative to the annotated onset.</strong> Runtime detectors tend to fire systematically early or late, while ProTracer remains concentrated near the annotated failure onset.</figcaption>
-        </figure>
+        <div class="runtime-grid">
+            <article class="analysis-card runtime-card">
+              <div class="table-scroll compact-table">
+                <table>
+                  <thead>
+                    <tr><th rowspan="2">Detector</th><th colspan="3">Failure Detection</th><th colspan="3">Failure Onset</th></tr>
+                    <tr><th>AUROC ↑</th><th>TPR ↑</th><th>TNR ↑</th><th>MAE ↓</th><th>@0.5s ↑</th><th>@1s ↑</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>RND-OE</td><td>0.57</td><td>44.83</td><td>79.59</td><td>5.03</td><td>0.74</td><td>2.96</td></tr>
+                    <tr><td>FIDeL</td><td>0.60</td><td>34.73</td><td>95.92</td><td>5.27</td><td>0.25</td><td>1.97</td></tr>
+                    <tr><td>RynnValue-8B</td><td>0.85</td><td>38.18</td><td>93.88</td><td>2.61</td><td>1.72</td><td>5.67</td></tr>
+                    <tr><td>GRU (Onset Supervised)</td><td>0.74</td><td>71.43</td><td>65.31</td><td>2.08</td><td>18.97</td><td>33.99</td></tr>
+                    <tr class="ours"><td><strong>ProTracer (zero-shot)</strong></td><td>–</td><td><strong>99.26</strong></td><td><strong>100.00</strong></td><td><strong>0.59</strong></td><td><strong>71.18</strong></td><td><strong>81.03</strong></td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </article>
+            <figure class="figure-card runtime-figure" id="runtime-error-figure">
+              <img src="assets/runtime-first-alarm-error.png" alt="Distribution of first-alarm timing error for runtime failure detectors and ProTracer.">
+              <figcaption><strong>First-alarm error relative to the annotated onset.</strong> Runtime detectors tend to fire systematically early or late, while ProTracer remains concentrated near the annotated failure onset.</figcaption>
+            </figure>
+        </div>
       </div>
 
       <figure class="figure-card result-figure">
