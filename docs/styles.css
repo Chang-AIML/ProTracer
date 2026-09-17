@@ -36,6 +36,7 @@ section { padding: 82px 0 12px; scroll-margin-top: 30px; }
 h2 { display: inline-block; margin: 0 0 30px; font-size: 2rem; line-height: 1.2; letter-spacing: -.025em; }
 h2::after { content: ""; display: block; width: 44px; height: 4px; margin-top: 10px; border-radius: 3px; background: var(--purple); }
 .lead { margin-top: 32px; color: #36353d; font-size: 1.08rem; }
+.overview-lead { margin-top: 0; }
 .section-intro { max-width: 720px; margin: -12px 0 30px; color: var(--muted); font-size: 1.02rem; }
 .figure-card { margin: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 13px; background: #fff; }
 .figure-card img { width: 100%; }
@@ -45,6 +46,11 @@ figcaption strong { color: var(--ink); }
 .method-notes article { padding: 22px; border: 1px solid var(--line); border-radius: 12px; background: var(--panel); }
 .method-notes h3 { margin: 0 0 7px; font-size: 1rem; }
 .method-notes p { margin: 0; color: var(--muted); font-size: .92rem; }
+.video-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.video-card { margin: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 13px; background: #111; }
+.video-card video { display: block; width: 100%; aspect-ratio: 16 / 9; background: #000; }
+.video-card figcaption { color: #d7d4df; border-top-color: #2d2b33; background: #18171c; }
+.video-card figcaption strong { color: #fff; }
 
 .table-card { overflow: hidden; border: 1px solid var(--line); border-radius: 13px; background: #fff; }
 .table-title { padding: 17px 19px; font-weight: 800; border-bottom: 1px solid var(--line); background: var(--panel); }
@@ -73,6 +79,7 @@ footer { margin-top: 80px; padding: 28px 0; color: var(--muted); border-top: 1px
   .authors br { display: none; }
   section { padding-top: 62px; }
   .method-notes { grid-template-columns: 1fr; }
+  .video-grid { grid-template-columns: 1fr; }
   .figure-card { border-radius: 9px; }
   figcaption { padding: 13px 14px; }
   .bib-card { padding: 22px 15px; }

@@ -12,6 +12,7 @@
     <strong>CONTENTS</strong>
     <nav>
       <a href="#overview">Overview</a>
+      <a href="#demos">Demos</a>
       <a href="#method">Method</a>
       <a href="#results">Results</a>
       <a href="#bibtex">BibTeX</a>
@@ -36,12 +37,39 @@
   <main class="container">
     <section id="overview">
       <h2>Overview</h2>
-      <figure class="figure-card">
-        <img src="assets/teaser.png" alt="A premature gripper release is visible in proprioception before its consequence appears in the camera view.">
-        <figcaption><strong>Failure onset can precede visible failure.</strong> The gripper releases prematurely at 13.7 s while the scene still looks normal; the spill becomes visible only at 16.4 s.</figcaption>
-      </figure>
-      <p class="lead">We introduce <strong>ProTracer</strong>, a training-free framework for comprehensive robot manipulation failure analysis. It uses proprioceptive dynamics to find temporally informative action boundaries and converts robot-state signals into structured narratives that a vision-language model can reason over together with visual observations.</p>
+      <p class="lead overview-lead">We introduce <strong>ProTracer</strong>, a training-free framework for comprehensive robot manipulation failure analysis. It uses proprioceptive dynamics to find temporally informative action boundaries and converts robot-state signals into structured narratives that a vision-language model can reason over together with visual observations.</p>
       <p>ProTracer supports failure detection, categorization, explanation, avoidance, and the new task of <strong>failure onset localization</strong>: identifying the earliest moment when an execution deviates from a valid task-completion trajectory and ultimately leads to failure. We also introduce <strong>FailTime</strong>, a benchmark with synchronized visual and proprioceptive observations and frame-level onset annotations.</p>
+    </section>
+
+    <section id="demos">
+      <h2>Demos</h2>
+      <p class="section-intro">From proprioceptive trajectories to keyframes, scene understanding, and grounded failure diagnosis.</p>
+      <div class="video-grid">
+        <figure class="video-card">
+          <video controls preload="metadata" playsinline poster="assets/videos/top-drawer-controller.jpg">
+            <source src="assets/videos/top-drawer-controller.mp4" type="video/mp4">
+          </video>
+          <figcaption><strong>Top drawer.</strong> Pull the drawer and place the controller.</figcaption>
+        </figure>
+        <figure class="video-card">
+          <video controls preload="metadata" playsinline poster="assets/videos/bottom-drawer-can.jpg">
+            <source src="assets/videos/bottom-drawer-can.mp4" type="video/mp4">
+          </video>
+          <figcaption><strong>Bottom drawer.</strong> Pull the drawer and place the can.</figcaption>
+        </figure>
+        <figure class="video-card">
+          <video controls preload="metadata" playsinline poster="assets/videos/orange-block-microwave.jpg">
+            <source src="assets/videos/orange-block-microwave.mp4" type="video/mp4">
+          </video>
+          <figcaption><strong>Microwave.</strong> Pick the orange block and place it inside.</figcaption>
+        </figure>
+        <figure class="video-card">
+          <video controls preload="metadata" playsinline poster="assets/videos/marker-cross.jpg">
+            <source src="assets/videos/marker-cross.mp4" type="video/mp4">
+          </video>
+          <figcaption><strong>Marker.</strong> Pick the marker and draw a cross.</figcaption>
+        </figure>
+      </div>
     </section>
 
     <section id="method">
