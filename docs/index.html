@@ -5,15 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="ProTracer: Proprioception-Guided Failure Diagnosis in Robot Manipulation">
   <title>ProTracer | Proprioception-Guided Failure Diagnosis</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=2">
 </head>
 <body>
   <aside class="toc" aria-label="Contents">
     <strong>CONTENTS</strong>
     <nav>
       <a href="#overview">Overview</a>
-      <a href="#demos">Demos</a>
       <a href="#method">Method</a>
+      <a href="#demos">Demos</a>
       <a href="#results">Results</a>
       <a href="#bibtex">BibTeX</a>
     </nav>
@@ -41,37 +41,6 @@
       <p>ProTracer supports failure detection, categorization, explanation, avoidance, and the new task of <strong>failure onset localization</strong>: identifying the earliest moment when an execution deviates from a valid task-completion trajectory and ultimately leads to failure. We also introduce <strong>FailTime</strong>, a benchmark with synchronized visual and proprioceptive observations and frame-level onset annotations.</p>
     </section>
 
-    <section id="demos">
-      <h2>Demos</h2>
-      <p class="section-intro">From proprioceptive trajectories to keyframes, scene understanding, and grounded failure diagnosis.</p>
-      <div class="video-grid">
-        <figure class="video-card">
-          <video controls preload="metadata" playsinline poster="assets/videos/top-drawer-controller.jpg">
-            <source src="assets/videos/top-drawer-controller.mp4" type="video/mp4">
-          </video>
-          <figcaption><strong>Top drawer.</strong> Pull the drawer and place the controller.</figcaption>
-        </figure>
-        <figure class="video-card">
-          <video controls preload="metadata" playsinline poster="assets/videos/bottom-drawer-can.jpg">
-            <source src="assets/videos/bottom-drawer-can.mp4" type="video/mp4">
-          </video>
-          <figcaption><strong>Bottom drawer.</strong> Pull the drawer and place the can.</figcaption>
-        </figure>
-        <figure class="video-card">
-          <video controls preload="metadata" playsinline poster="assets/videos/orange-block-microwave.jpg">
-            <source src="assets/videos/orange-block-microwave.mp4" type="video/mp4">
-          </video>
-          <figcaption><strong>Microwave.</strong> Pick the orange block and place it inside.</figcaption>
-        </figure>
-        <figure class="video-card">
-          <video controls preload="metadata" playsinline poster="assets/videos/marker-cross.jpg">
-            <source src="assets/videos/marker-cross.mp4" type="video/mp4">
-          </video>
-          <figcaption><strong>Marker.</strong> Pick the marker and draw a cross.</figcaption>
-        </figure>
-      </div>
-    </section>
-
     <section id="method">
       <h2>Method</h2>
       <p class="section-intro">Proprioception provides temporal precision; vision-language reasoning provides semantic understanding.</p>
@@ -82,6 +51,40 @@
       <div class="method-notes">
         <article><h3>Action-boundary localization</h3><p>Gripper and end-effector dynamics identify meaningful transitions instead of densely sampling redundant video frames.</p></article>
         <article><h3>Structured multimodal reasoning</h3><p>Robot-state measurements become concise physical descriptions that are jointly analyzed with keyframes and task context.</p></article>
+      </div>
+    </section>
+
+    <section id="demos">
+      <h2>Demos</h2>
+      <p class="section-intro">From proprioceptive trajectories to keyframes, scene understanding, and grounded failure diagnosis.</p>
+      <div class="video-carousel" data-carousel>
+        <div class="carousel-stage">
+          <figure class="video-card" data-slide>
+            <video autoplay muted loop preload="auto" playsinline poster="assets/videos/top-drawer-controller.jpg"><source src="assets/videos/top-drawer-controller.mp4" type="video/mp4"></video>
+            <figcaption><strong>Top drawer.</strong> Pull the drawer and place the controller.</figcaption>
+          </figure>
+          <figure class="video-card" data-slide hidden>
+            <video autoplay muted loop preload="auto" playsinline poster="assets/videos/bottom-drawer-can.jpg"><source src="assets/videos/bottom-drawer-can.mp4" type="video/mp4"></video>
+            <figcaption><strong>Bottom drawer.</strong> Pull the drawer and place the can.</figcaption>
+          </figure>
+          <figure class="video-card" data-slide hidden>
+            <video autoplay muted loop preload="auto" playsinline poster="assets/videos/orange-block-microwave.jpg"><source src="assets/videos/orange-block-microwave.mp4" type="video/mp4"></video>
+            <figcaption><strong>Microwave.</strong> Pick the orange block and place it inside.</figcaption>
+          </figure>
+          <figure class="video-card" data-slide hidden>
+            <video autoplay muted loop preload="auto" playsinline poster="assets/videos/marker-cross.jpg"><source src="assets/videos/marker-cross.mp4" type="video/mp4"></video>
+            <figcaption><strong>Marker.</strong> Pick the marker and draw a cross.</figcaption>
+          </figure>
+        </div>
+        <div class="carousel-footer">
+          <div class="carousel-dots" aria-label="Choose demo">
+            <button class="active" type="button" data-dot="0" aria-label="Show demo 1"></button>
+            <button type="button" data-dot="1" aria-label="Show demo 2"></button>
+            <button type="button" data-dot="2" aria-label="Show demo 3"></button>
+            <button type="button" data-dot="3" aria-label="Show demo 4"></button>
+          </div>
+          <span class="carousel-count" data-count aria-live="polite">1 / 4</span>
+        </div>
       </div>
     </section>
 
@@ -128,6 +131,6 @@
   </main>
 
   <footer><div class="container">Adelaide University · 2026</div></footer>
-  <script src="script.js"></script>
+  <script src="script.js?v=2"></script>
 </body>
 </html>
