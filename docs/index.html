@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ProTracer: Proprioception-Guided Failure Diagnosis in Robot Manipulation">
+  <title>ProTracer | Proprioception-Guided Failure Diagnosis</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav wrap" aria-label="Primary navigation">
+      <a class="brand" href="#top">PROTRACER</a>
+      <div class="nav-links">
+        <a href="#abstract">Abstract</a>
+        <a href="#method">Method</a>
+        <a href="#results">Results</a>
+      </div>
+    </nav>
+
+    <div id="top" class="hero-content wrap">
+      <p class="eyebrow">ROBOT FAILURE ANALYSIS</p>
+      <h1><span>ProTracer:</span> Proprioception-Guided<br>Failure Diagnosis in Robot Manipulation</h1>
+      <p class="authors">Anonymous Authors</p>
+      <p class="venue">Under review</p>
+      <div class="button-row" aria-label="Project links">
+        <span class="button muted" title="Paper link will be added after public release">Paper · Coming soon</span>
+        <span class="button muted" title="arXiv link will be added after public release">arXiv · Coming soon</span>
+        <a class="button primary" href="https://github.com/Chang-AIML/ProTracer" target="_blank" rel="noreferrer">Code</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="teaser wrap section-pad">
+      <figure class="paper-figure wide-card">
+        <img src="assets/failure-onset.png" alt="A gripper releases a tube at 13.7 seconds before the spill becomes visually apparent at 16.4 seconds.">
+        <figcaption><strong>The failure starts before it looks like a failure.</strong> ProTracer uses proprioception to locate the premature release at 13.7 s, while vision reveals the consequence at 16.4 s.</figcaption>
+      </figure>
+    </section>
+
+    <section id="abstract" class="section wrap prose-grid">
+      <div>
+        <p class="section-kicker">01 / Motivation</p>
+        <h2>Diagnose not only <em>what</em> failed,<br>but <em>when</em> it began.</h2>
+      </div>
+      <div class="prose">
+        <p>Robot manipulation failures may begin well before their consequences become visible. ProTracer introduces <strong>failure onset localization</strong>: retrospectively identifying the earliest moment at which an execution deviates from a valid task-completion trajectory and is ultimately followed by failure.</p>
+        <p>The framework combines temporally precise proprioceptive signals with the multimodal reasoning capabilities of existing vision-language models. It requires no additional model training and supports failure detection, categorization, explanation, avoidance, and onset localization.</p>
+      </div>
+    </section>
+
+    <section id="method" class="section band">
+      <div class="wrap">
+        <p class="section-kicker">02 / Method</p>
+        <h2>Proprioception finds the moment.<br>Vision explains the event.</h2>
+        <figure class="paper-figure method-figure">
+          <img src="assets/protracer-framework.png" alt="Overview of the ProTracer framework using video and proprioception for failure diagnosis.">
+        </figure>
+        <div class="steps">
+          <article><span>01</span><h3>Locate transitions</h3><p>Gripper and end-effector dynamics drive change-point detection and select informative visual moments.</p></article>
+          <article><span>02</span><h3>Narrate robot state</h3><p>Dense robot-state signals become structured, grounded natural-language descriptions for VLM reasoning.</p></article>
+          <article><span>03</span><h3>Diagnose jointly</h3><p>A VLM reasons over visual evidence, signal narratives, task context, and optional reflective experience.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="results" class="section wrap">
+      <p class="section-kicker">03 / Results</p>
+      <h2>Sub-second temporal grounding,<br>without model training.</h2>
+      <div class="metrics">
+        <article><strong>0.59 s</strong><span>Onset MAE</span><small>FailTime-Short · zero-shot</small></article>
+        <article><strong>71.18%</strong><span>Accuracy @ 0.5 s</span><small>ProTracer · zero-shot</small></article>
+        <article><strong>99.34%</strong><span>Failure detection</span><small>FailTime-Short</small></article>
+        <article><strong>72.91%</strong><span>Failure type</span><small>FailTime-Short</small></article>
+      </div>
+      <figure class="paper-figure results-figure wide-card">
+        <img src="assets/backbone-results.png" alt="Generalization results across four vision-language model backbones.">
+        <figcaption>ProTracer consistently improves onset localization across closed and open-weight VLM backbones; reflective experience provides further gains.</figcaption>
+      </figure>
+      <div class="qualitative-grid">
+        <figure class="paper-figure"><img src="assets/qualitative-results.png" alt="Qualitative comparison between ViFailback-8B and ProTracer on a long-horizon task."></figure>
+        <div class="prose qualitative-copy">
+          <p class="section-kicker">Why it matters</p>
+          <h3>Pinpoint the causal deviation.</h3>
+          <p>On long-horizon executions, an earlier action can look suspicious without being the true onset. ProTracer uses the robot's physical state to align semantic diagnosis with the moment the execution actually goes off track.</p>
+          <p>Removing sensor input more than doubles onset MAE from 0.59 s to 1.18 s, while removing vision collapses failure-type accuracy. The modalities play complementary roles.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section band" id="bibtex">
+      <div class="wrap citation-layout">
+        <div><p class="section-kicker">04 / Citation</p><h2>BibTeX</h2><p class="citation-note">Citation details will be added with the public paper release.</p></div>
+        <div class="code-card"><button id="copy-button" type="button">Copy</button><pre><code id="bibtex-code">@article{protracer2026,
+  title   = {ProTracer: Proprioception-Guided Failure Diagnosis in Robot Manipulation},
+  author  = {Anonymous Authors},
+  year    = {2026}
+}</code></pre></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap"><span>ProTracer · 2026</span><a href="https://github.com/Chang-AIML/ProTracer">GitHub</a></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
