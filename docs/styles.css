@@ -28,6 +28,8 @@ a { color: inherit; }
 h1 { max-width: 970px; margin: 0 auto 28px; font-size: clamp(2.7rem, 5.4vw, 5rem); font-weight: 730; line-height: 1.03; letter-spacing: -.055em; }
 h1 span { color: var(--purple); }
 .authors { margin: 0; font-size: 1.02rem; font-weight: 620; }
+.authors a { text-decoration: none; text-underline-offset: 3px; }
+.authors a:hover { color: var(--purple); text-decoration: underline; }
 .affiliation { margin: 5px 0 0; color: var(--muted); }
 .project-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
 .pill { padding: 9px 18px; border: 1px solid rgba(29,29,31,.1); border-radius: 999px; background: rgba(255,255,255,.82); box-shadow: 0 3px 12px rgba(29,29,31,.05); font-size: .88rem; font-weight: 650; text-decoration: none; transition: transform .2s ease, color .2s ease, background .2s ease; backdrop-filter: blur(12px); }
