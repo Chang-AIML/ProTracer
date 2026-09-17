@@ -42,16 +42,18 @@ h2::after { content: ""; display: block; width: 44px; height: 4px; margin-top: 1
 .section-intro { max-width: 720px; margin: -12px 0 30px; color: var(--muted); font-size: 1.02rem; }
 .figure-card { margin: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 24px; background: #fff; box-shadow: var(--shadow); }
 .figure-card img { width: 100%; }
+#method .figure-card img { padding: 24px 24px 0; }
 figcaption { padding: 17px 20px 18px; color: var(--muted); border-top: 1px solid var(--line); font-size: .93rem; }
 figcaption strong { color: var(--ink); }
 .method-notes { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 20px; }
 .method-notes article { padding: 26px; border: 1px solid var(--line); border-radius: 20px; background: var(--panel); box-shadow: 0 8px 28px rgba(29,29,31,.05); }
 .method-notes h3 { margin: 0 0 7px; font-size: 1rem; }
 .method-notes p { margin: 0; color: var(--muted); font-size: .92rem; }
-.video-card { margin: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 26px; background: #fff; box-shadow: var(--shadow); }
+.video-card { margin: 0; border: 0; background: transparent; }
 .video-card video { display: block; width: 100%; aspect-ratio: 16 / 9; background: #000; }
-.video-card figcaption { color: var(--muted); border-top-color: var(--line); background: #fff; }
-.video-card figcaption strong { color: var(--ink); }
+.video-card video { overflow: hidden; border-radius: 26px; box-shadow: var(--shadow); }
+.video-caption { padding: 17px 4px 6px; color: var(--muted); border: 0; background: transparent; }
+.video-caption strong { color: var(--ink); }
 .video-card[hidden] { display: none; }
 .video-carousel { max-width: 840px; margin-inline: auto; }
 .carousel-stage { position: relative; }
@@ -90,6 +92,7 @@ footer { margin-top: 80px; padding: 28px 0; color: var(--muted); border-top: 1px
   section { padding-top: 62px; }
   .method-notes { grid-template-columns: 1fr; }
   .figure-card, .video-card, .table-card, .bib-card { border-radius: 18px; }
+  #method .figure-card img { padding: 12px 12px 0; }
   figcaption { padding: 13px 14px; }
   .bib-card { padding: 22px 15px; }
 }
