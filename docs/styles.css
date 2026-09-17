@@ -91,6 +91,8 @@ tbody tr:last-child td { border-bottom: 0; }
 .result-grid .compact-table table { font-size: .71rem; }
 .result-grid .compact-table th, .result-grid .compact-table td { padding: 8px 5px; }
 .runtime-card { padding: 18px; }
+.runtime-figure { max-width: 820px; margin: 18px auto 0; }
+.runtime-figure img { padding: 24px 24px 0; }
 .result-figure { margin-top: 28px; }
 #results .result-figure img { padding: 24px 24px 0; }
 
@@ -113,6 +115,7 @@ footer { margin-top: 80px; padding: 28px 0; color: var(--muted); border-top: 1px
   .figure-card, .video-card, .table-card, .bib-card { border-radius: 18px; }
   #method .figure-card img { padding: 12px 12px 0; }
   #results .result-figure img { padding: 12px 12px 0; }
+  .runtime-figure img { padding: 12px 12px 0; }
   .table-card { padding: 12px; }
   figcaption { padding: 13px 14px; }
   .bib-card { padding: 22px 15px; }
