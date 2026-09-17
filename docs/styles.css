@@ -64,9 +64,9 @@ figcaption strong { color: var(--ink); }
 .carousel-dots button.active { background: var(--purple); transform: scale(1.25); }
 .carousel-count { color: var(--muted); font-size: .78rem; font-variant-numeric: tabular-nums; }
 
-.table-card { overflow: hidden; border: 1px solid var(--line); border-radius: 24px; background: #fff; box-shadow: var(--shadow); }
-.table-title { padding: 17px 19px; font-weight: 800; border-bottom: 1px solid var(--line); background: var(--panel); }
-.table-scroll { overflow-x: auto; }
+.table-card { padding: 20px; border: 1px solid var(--line); border-radius: 24px; background: #fff; box-shadow: var(--shadow); }
+.table-title { padding: 2px 2px 17px; font-weight: 800; }
+.table-scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 16px 16px 0 0; background: #fbfbfd; }
 table { width: 100%; border-collapse: collapse; font-size: .86rem; font-variant-numeric: tabular-nums; }
 th, td { padding: 11px 12px; text-align: center; border-bottom: 1px solid #e7e6ea; white-space: nowrap; }
 th:first-child, td:first-child { text-align: left; }
@@ -75,8 +75,9 @@ thead th { color: #555260; font-size: .78rem; }
 tbody tr:last-child td { border-bottom: 0; }
 .ours { color: var(--purple-dark); background: var(--purple-soft); }
 .ours.exp { background: #e8e1fa; }
-.table-note { margin: 0; padding: 11px 18px; color: var(--muted); border-top: 1px solid var(--line); font-size: .78rem; }
+.table-note { margin: 0; padding: 12px 14px; color: var(--muted); border: 1px solid var(--line); border-top: 0; border-radius: 0 0 16px 16px; background: #fbfbfd; font-size: .78rem; }
 .result-figure { margin-top: 28px; }
+#results .result-figure img { padding: 24px 24px 0; }
 
 .bib-card { position: relative; overflow-x: auto; padding: 28px; border: 1px solid var(--line); border-radius: 24px; background: #fff; box-shadow: var(--shadow); }
 .bib-card button { position: absolute; top: 13px; right: 13px; padding: 6px 13px; border: 1px solid #cfccd5; border-radius: 999px; background: #fff; cursor: pointer; }
@@ -93,6 +94,8 @@ footer { margin-top: 80px; padding: 28px 0; color: var(--muted); border-top: 1px
   .method-notes { grid-template-columns: 1fr; }
   .figure-card, .video-card, .table-card, .bib-card { border-radius: 18px; }
   #method .figure-card img { padding: 12px 12px 0; }
+  #results .result-figure img { padding: 12px 12px 0; }
+  .table-card { padding: 12px; }
   figcaption { padding: 13px 14px; }
   .bib-card { padding: 22px 15px; }
 }
