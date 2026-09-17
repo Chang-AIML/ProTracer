@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="ProTracer: Proprioception-Guided Failure Diagnosis in Robot Manipulation">
   <title>ProTracer | Proprioception-Guided Failure Diagnosis</title>
-  <link rel="stylesheet" href="styles.css?v=7">
+  <link rel="stylesheet" href="styles.css?v=9">
 </head>
 <body>
   <aside class="toc" aria-label="Contents">
@@ -111,6 +111,69 @@
         </div>
         <p class="table-note">Onset metrics are reported in seconds / percent. Failure diagnosis scores are percentages.</p>
       </div>
+
+      <div class="result-block">
+        <h3 class="result-subheading">Ablation Study</h3>
+        <p class="result-description">Proprioception provides temporal grounding, vision supplies semantic context, and Sign-CPD selects the most informative action boundaries.</p>
+        <div class="result-grid">
+          <article class="analysis-card">
+            <h4>Modality Ablations</h4>
+            <div class="table-scroll compact-table">
+              <table>
+                <thead>
+                  <tr><th rowspan="2">Model</th><th colspan="3">Failure Onset</th><th rowspan="2">Detect. ↑</th><th rowspan="2">Type ↑</th></tr>
+                  <tr><th>MAE ↓</th><th>@0.5s ↑</th><th>@1s ↑</th></tr>
+                </thead>
+                <tbody>
+                  <tr class="ours"><td><strong>ProTracer (Sign-CPD)</strong></td><td><strong>0.59</strong></td><td><strong>71.18</strong></td><td><strong>81.03</strong></td><td><strong>99.34</strong></td><td><strong>72.91</strong></td></tr>
+                  <tr><td>w/o sensor</td><td>1.18</td><td>30.79</td><td>59.85</td><td>98.24</td><td>57.39</td></tr>
+                  <tr><td>w/o vision</td><td>1.88</td><td>23.65</td><td>48.52</td><td>90.33</td><td>15.02</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="analysis-card">
+            <h4>Key-frame Selectors</h4>
+            <div class="table-scroll compact-table">
+              <table>
+                <thead>
+                  <tr><th rowspan="2">Selector</th><th colspan="3">Failure Onset</th><th rowspan="2">Detect. ↑</th><th rowspan="2">Type ↑</th></tr>
+                  <tr><th>MAE ↓</th><th>@0.5s ↑</th><th>@1s ↑</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Optical Flow</td><td>0.73</td><td>66.50</td><td>76.11</td><td>98.68</td><td>64.78</td></tr>
+                  <tr><td>Continuous CPD</td><td>0.79</td><td>66.26</td><td>77.34</td><td>98.90</td><td>66.50</td></tr>
+                  <tr class="ours"><td><strong>Sign-CPD</strong></td><td><strong>0.59</strong></td><td><strong>71.18</strong></td><td><strong>81.03</strong></td><td><strong>99.34</strong></td><td><strong>72.91</strong></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="result-block">
+        <h3 class="result-subheading">Runtime Detector Comparison</h3>
+        <p class="result-description">For causal runtime detectors, the first alarm is evaluated as a failure-onset estimate. ProTracer remains zero-shot and is not used as a policy-stopping detector.</p>
+        <article class="analysis-card runtime-card">
+          <div class="table-scroll compact-table">
+            <table>
+              <thead>
+                <tr><th rowspan="2">Detector</th><th colspan="3">Failure Detection</th><th colspan="3">Failure Onset</th></tr>
+                <tr><th>AUROC ↑</th><th>TPR ↑</th><th>TNR ↑</th><th>MAE ↓</th><th>@0.5s ↑</th><th>@1s ↑</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>RND-OE</td><td>0.57</td><td>44.83</td><td>79.59</td><td>5.03</td><td>0.74</td><td>2.96</td></tr>
+                <tr><td>FIDeL</td><td>0.60</td><td>34.73</td><td>95.92</td><td>5.27</td><td>0.25</td><td>1.97</td></tr>
+                <tr><td>RynnValue-8B</td><td>0.85</td><td>38.18</td><td>93.88</td><td>2.61</td><td>1.72</td><td>5.67</td></tr>
+                <tr><td>GRU (Onset Supervised)</td><td>0.74</td><td>71.43</td><td>65.31</td><td>2.08</td><td>18.97</td><td>33.99</td></tr>
+                <tr class="ours"><td><strong>ProTracer (zero-shot)</strong></td><td>–</td><td><strong>99.26</strong></td><td><strong>100.00</strong></td><td><strong>0.59</strong></td><td><strong>71.18</strong></td><td><strong>81.03</strong></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+
       <figure class="figure-card result-figure">
         <img src="assets/figure5.png" alt="Generalization results across Gemini, Qwen, GPT, and open-weight VLM backbones.">
         <figcaption><strong>Generalization across VLM backbones.</strong> Structured proprioceptive evidence consistently improves onset localization, and reflective experience transfers across models.</figcaption>
