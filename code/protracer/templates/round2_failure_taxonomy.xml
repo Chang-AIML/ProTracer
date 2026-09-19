@@ -1,0 +1,58 @@
+<failure_taxonomy>
+  <verdict>
+    <success>completed all required steps in the specified order according to the task description.</success>
+    <failure>did not complete the task or violated the required order according to the task description.</failure>
+  </verdict>
+  <onset>Failure onset is the first moment when the robot performs a commit action outside the current substage's expected action set and that action ultimately locks in the failure. Approach, alignment, and other recoverable repositioning actions are not onset. If a deviation does not lead to failure because the robot later recovers, it is not a failure onset.
+
+For example, if a pick-up task is decomposed into move → grasp → move, and the robot fails to secure the object, the onset is the moment the robot starts the next substage, such as lifting or moving away, while the object is not held. If the robot initially fails to grasp but then successfully re-grasps the object, there is no failure onset for the initial failed attempt.
+
+If no clear commit action occurs because a substage is stuck, fall back to `min(next_substage_start, video_end)`. Cascading failures share the root onset.</onset>
+  <reason>A failure reason should describe the concrete mismatch between the expected outcome and the observed evidence. It should include three parts: what was expected from the task plan or instruction, what was actually observed, and the resulting failure. Use concrete physical terms such as object relationships, aperture state, pose offset, target identity, and final object state, etc. Do not speculate about why the policy chose the wrong action; that is not observable.</reason>
+  <avoidance>The smallest concrete physical action before onset that would close the Expected−Observed gap ( mismatch between the expected outcome and the observed evidence). Not meta-advice, not a re-plan.</avoidance>
+  <type>
+    <instruction>Type — pick one primary type.</instruction>
+    <primary_types>
+      <type name="wrong_sequence">
+        <definition>Substages performed in the wrong order, or a required substage skipped entirely.</definition>
+        <onset>wrong-substage contact-start / commit-action start, or wrong-substage end if no task-relevant contact occurs.</onset>
+      </type>
+      <type name="wrong_object">
+        <definition>The robot commits to the wrong target object. A wrong-object approach alone is not onset if it can still retarget.</definition>
+        <onset>wrong-object contact-start / close-start / release-start, or wrong targeted substage end if no task-relevant contact occurs.</onset>
+      </type>
+      <type name="wrong_gripper">
+        <definition>The wrong arm performs a substage or atomic action meant for the other arm.</definition>
+        <onset>wrong-gripper contact-start, or wrong-gripper substage end if no task-relevant contact occurs.</onset>
+      </type>
+      <type name="wrong_placement">
+        <definition>A firmly-held object is released at the wrong target location.</definition>
+        <onset>release-start at the wrong target location.</onset>
+      </type>
+      <type name="closing_error">
+        <definition>The correct gripper attempts to grasp the correct object or keep grasping the correct object but fails to secure or keep hold of it.</definition>
+        <onset>the next-substage start, when the robot starts lifting, moving away, or transporting while the target object is not securely held.</onset>
+      </type>
+      <type name="open_error">
+        <definition>The gripper fails to open when opening is required: either it does not release a held object, or it does not pre-open wide enough before grasping.</definition>
+        <onset>contact-start or release-start, when the gripper is visibly not open enough for the required action: it contacts the object without sufficient pre-opening, or it reaches the release stage while still holding the object closed.</onset>
+      </type>
+      <type name="translation_error">
+        <definition>The gripper's XYZ position is misaligned with the object or target, while the wrist orientation is acceptable. This happens during move, alignment, grasp, or release. If a position shift alone would fix the action, use `translation_error`.</definition>
+        <onset>contact-start / close-start / release-start with the offset pose.</onset>
+      </type>
+      <type name="orientation_error">
+        <definition>The gripper's yaw, pitch, or roll is misaligned with the object's affordance pose orientation. For example, the opening axis runs along the grasp axis instead of across it, so even a correct XYZ position would not rescue the grasp. If wrist reorientation is required even with correct XYZ position, use `rotation_error`.</definition>
+        <onset>contact-start / close-start / release-start with the wrong orientation.</onset>
+      </type>
+      <type name="avoidable_intervention">
+        <definition>An external disturbance (typically a human moving an object mid-episode) triggered a downstream execution failure that the robot could have avoided by retargeting.</definition>
+        <onset>the underlying failure's onset, when the robot commits to the failed action under a disturbed but still recoverable scene.</onset>
+      </type>
+      <type name="unavoidable_intervention">
+        <definition>An external disturbance left the scene unrecoverable (e.g. the target object was removed entirely from the workspace or blocked). The arm proceeded under the disturbed state with no way to rescue.</definition>
+        <onset>the commit-action start under the disturbed scene, when the target object or required target state is no longer physically available or recoverable.</onset>
+      </type>
+    </primary_types>
+  </type>
+</failure_taxonomy>

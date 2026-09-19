@@ -1,0 +1,42 @@
+<task name="blocks_to_bowls">
+  <description>Put each coloured cube into the bowl of the same colour: take out any cube that starts in the wrong bowl and set it on the table, then use the left arm for cubes on the left of the workspace and the right arm for cubes on the right. Success condition: The green, yellow and orange cubes each end up inside the bowl matching their own colour, one cube per bowl, with no cube left on the table.</description>
+  <task_objects>
+    <object>coloured cubes</object>
+    <object>green bowl</object>
+    <object>yellow bowl</object>
+    <object>orange bowl</object>
+    <object>tabletop</object>
+  </task_objects>
+  <substages>
+    <substage>1. move an arm to a cube sitting in a bowl</substage>
+    <substage>2. grasp the cube</substage>
+    <substage>3. lift the cube clear of the bowl</substage>
+    <substage>4. release the cube onto the open table</substage>
+    <substage>5. repeat for all cubes that start in a bowl</substage>
+    <substage>6. move an arm to a cube on the table</substage>
+    <substage>7. grasp the cube</substage>
+    <substage>8. move the cube above the bowl matching its colour</substage>
+    <substage>9. release the cube into the matching bowl</substage>
+    <substage>10. repeat for all three cubes</substage>
+  </substages>
+  <predicates>
+    <predicate>grasped</predicate>
+    <predicate>contact</predicate>
+    <predicate>near</predicate>
+    <predicate>aligned_with</predicate>
+    <predicate>inside</predicate>
+    <predicate>on_top_of</predicate>
+    <predicate>supports</predicate>
+    <predicate>separated_from</predicate>
+    <predicate>left_of</predicate>
+    <predicate>right_of</predicate>
+    <predicate>above</predicate>
+    <predicate>below</predicate>
+    <predicate>in_front_of</predicate>
+    <predicate>behind</predicate>
+    <predicate>open</predicate>
+    <predicate>closed</predicate>
+    <predicate>inserted_into</predicate>
+    <predicate>stable</predicate>
+  </predicates>
+</task>

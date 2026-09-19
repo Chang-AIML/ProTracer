@@ -1,0 +1,33 @@
+<task name="pick_cylinder_place_drawer">
+  <description>Use the left arm to pick up the green cylinder from the plate and place it in the drawer.</description>
+  <task_objects>
+    <object>green cylinder</object>
+    <object>plate</object>
+    <object>drawer</object>
+  </task_objects>
+  <substages>
+    <substage>1. Move the left arm to approach and align with the green cylinder on the plate.</substage>
+    <substage>2. Grasp the green cylinder with the left arm.</substage>
+    <substage>3. Move the left arm to align with the drawer.</substage>
+    <substage>4. Release the gripper to place the green cylinder into the drawer.</substage>
+  </substages>
+  <predicates>
+    <predicate>grasped</predicate>
+    <predicate>contact</predicate>
+    <predicate>near</predicate>
+    <predicate>aligned_with</predicate>
+    <predicate>inside</predicate>
+    <predicate>on_top_of</predicate>
+    <predicate>supports</predicate>
+    <predicate>separated_from</predicate>
+    <predicate>left_of</predicate>
+    <predicate>right_of</predicate>
+    <predicate>above</predicate>
+    <predicate>below</predicate>
+    <predicate>in_front_of</predicate>
+    <predicate>behind</predicate>
+    <predicate>open</predicate>
+    <predicate>closed</predicate>
+    <predicate>partly_open</predicate>
+  </predicates>
+</task>

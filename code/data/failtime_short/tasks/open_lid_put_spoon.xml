@@ -1,0 +1,34 @@
+<task name="open_lid_put_spoon">
+  <description>Use the right arm to open rice cooker lid. Then use the left arm to pick up the white spoon and put it into the rice cooker.</description>
+  <task_objects>
+    <object>rice cooker lid</object>
+    <object>white spoon</object>
+    <object>rice cooker</object>
+  </task_objects>
+  <substages>
+    <substage>1. Move the right arm to approach and align with the rice cooker lid.</substage>
+    <substage>2. Grasp the rice cooker lid with the right arm.</substage>
+    <substage>3. Open the rice cooker lid using the right arm.</substage>
+    <substage>4. Move the left arm to approach and align with the white spoon.</substage>
+    <substage>5. Grasp the white spoon with the left arm.</substage>
+    <substage>6. Move the left arm to align with the open rice cooker.</substage>
+    <substage>7. Release the gripper to place the white spoon into the rice cooker.</substage>
+  </substages>
+  <predicates>
+    <predicate>grasped</predicate>
+    <predicate>contact</predicate>
+    <predicate>near</predicate>
+    <predicate>aligned_with</predicate>
+    <predicate>inside</predicate>
+    <predicate>on_top_of</predicate>
+    <predicate>supports</predicate>
+    <predicate>separated_from</predicate>
+    <predicate>left_of</predicate>
+    <predicate>right_of</predicate>
+    <predicate>above</predicate>
+    <predicate>below</predicate>
+    <predicate>in_front_of</predicate>
+    <predicate>behind</predicate>
+    <predicate>lid_off</predicate>
+  </predicates>
+</task>

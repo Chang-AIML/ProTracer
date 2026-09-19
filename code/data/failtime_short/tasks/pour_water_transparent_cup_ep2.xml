@@ -1,0 +1,34 @@
+<task name="pour_water_transparent_cup_ep2">
+  <description>Use the right arm to grasp the handle of the pink cup and pour the colored water into the transparent cup.</description>
+  <task_objects>
+    <object>handle</object>
+    <object>pink cup</object>
+    <object>colored water</object>
+    <object>transparent cup</object>
+  </task_objects>
+  <substages>
+    <substage>1. Move the right arm to approach and align with the handle of the pink cup.</substage>
+    <substage>2. Grasp the handle of the pink cup with the right arm.</substage>
+    <substage>3. Move the right arm to align the pink cup above the transparent cup.</substage>
+    <substage>4. Tilt the pink cup to pour the colored water into the transparent cup.</substage>
+    <substage>5. Release the pink cup.</substage>
+  </substages>
+  <predicates>
+    <predicate>grasped</predicate>
+    <predicate>contact</predicate>
+    <predicate>near</predicate>
+    <predicate>aligned_with</predicate>
+    <predicate>inside</predicate>
+    <predicate>on_top_of</predicate>
+    <predicate>supports</predicate>
+    <predicate>separated_from</predicate>
+    <predicate>left_of</predicate>
+    <predicate>right_of</predicate>
+    <predicate>above</predicate>
+    <predicate>below</predicate>
+    <predicate>in_front_of</predicate>
+    <predicate>behind</predicate>
+    <predicate>tilted_above</predicate>
+    <predicate>pouring_into</predicate>
+  </predicates>
+</task>

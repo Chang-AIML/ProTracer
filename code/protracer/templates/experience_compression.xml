@@ -1,0 +1,28 @@
+<experience_compression>
+
+  <intro>
+    The accumulated experience buffer below exceeds the 300-word budget.
+    Compress it while preserving every distinct observable rule. Merge
+    near-duplicates (same trigger, same signal). DO NOT invent new rules
+    or drop a unique signal.
+  </intro>
+
+  <current_experience>
+${experience}
+  </current_experience>
+
+  <your_task>
+    Re-emit the experience as a bulleted list, ≤300 words total, each
+    bullet ≤20 words. Order: most-applicable / most-general rules first;
+    narrower or task-flavored rules last (though no rule may name a task).
+
+    Output the compressed list inside ONE fenced block, no prose outside:
+
+    ```experience
+    - <rule 1>
+    - <rule 2>
+    - ...
+    ```
+  </your_task>
+
+</experience_compression>

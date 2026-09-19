@@ -1,0 +1,36 @@
+<task name="open_microwave_door_put_green_duck">
+  <description>Use the left arm to open the microwave oven door. Then use the right arm to put the green duck inside the microwave oven.</description>
+  <task_objects>
+    <object>microwave oven door</object>
+    <object>green duck</object>
+    <object>microwave oven</object>
+  </task_objects>
+  <substages>
+    <substage>1. Move the left arm to approach and align with the microwave oven door handle.</substage>
+    <substage>2. Grasp the microwave oven door handle with the left arm.</substage>
+    <substage>3. Pull the microwave oven door open using the left arm.</substage>
+    <substage>4. Move the right arm to approach and align with the green duck.</substage>
+    <substage>5. Grasp the green duck with the right arm.</substage>
+    <substage>6. Move the right arm to align with the inside of the microwave oven.</substage>
+    <substage>7. Release the gripper to place the green duck inside the microwave oven.</substage>
+  </substages>
+  <predicates>
+    <predicate>grasped</predicate>
+    <predicate>contact</predicate>
+    <predicate>near</predicate>
+    <predicate>aligned_with</predicate>
+    <predicate>inside</predicate>
+    <predicate>on_top_of</predicate>
+    <predicate>supports</predicate>
+    <predicate>separated_from</predicate>
+    <predicate>left_of</predicate>
+    <predicate>right_of</predicate>
+    <predicate>above</predicate>
+    <predicate>below</predicate>
+    <predicate>in_front_of</predicate>
+    <predicate>behind</predicate>
+    <predicate>open</predicate>
+    <predicate>closed</predicate>
+    <predicate>partly_open</predicate>
+  </predicates>
+</task>

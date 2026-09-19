@@ -1,0 +1,30 @@
+<task name="stack_green_cup_into_purple_cup">
+  <description>Use the left arm to stack the green cup into the purple cup.</description>
+  <task_objects>
+    <object>green cup</object>
+    <object>purple cup</object>
+  </task_objects>
+  <substages>
+    <substage>1. Move the left arm to approach and align with the green cup.</substage>
+    <substage>2. Grasp the green cup.</substage>
+    <substage>3. Move the left arm to align with the purple cup.</substage>
+    <substage>4. Release the gripper to stack the green cup into the purple cup.</substage>
+  </substages>
+  <predicates>
+    <predicate>grasped</predicate>
+    <predicate>contact</predicate>
+    <predicate>near</predicate>
+    <predicate>aligned_with</predicate>
+    <predicate>inside</predicate>
+    <predicate>on_top_of</predicate>
+    <predicate>supports</predicate>
+    <predicate>separated_from</predicate>
+    <predicate>left_of</predicate>
+    <predicate>right_of</predicate>
+    <predicate>above</predicate>
+    <predicate>below</predicate>
+    <predicate>in_front_of</predicate>
+    <predicate>behind</predicate>
+    <predicate>stacked_on</predicate>
+  </predicates>
+</task>

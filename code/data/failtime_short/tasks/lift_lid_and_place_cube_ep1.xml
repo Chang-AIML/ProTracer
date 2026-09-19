@@ -1,0 +1,36 @@
+<task name="lift_lid_and_place_cube_ep1">
+  <description>Use the left arm to lift the lid off the pot. Then use the right arm to grasp and place the red cube into the pot and the left arm put the lid back on the pot.</description>
+  <task_objects>
+    <object>lid</object>
+    <object>pot</object>
+    <object>red cube</object>
+  </task_objects>
+  <substages>
+    <substage>1. Move the left arm to approach and align with the lid.</substage>
+    <substage>2. Grasp the lid with the left arm.</substage>
+    <substage>3. Lift the lid off the pot using the left arm.</substage>
+    <substage>4. Move the right arm to approach and align with the red cube.</substage>
+    <substage>5. Grasp the red cube with the right arm.</substage>
+    <substage>6. Move the right arm to align with the pot.</substage>
+    <substage>7. Release the gripper to place the red cube into the pot.</substage>
+    <substage>8. Move the left arm to align with the pot.</substage>
+    <substage>9. Release the gripper to put the lid back on the pot.</substage>
+  </substages>
+  <predicates>
+    <predicate>grasped</predicate>
+    <predicate>contact</predicate>
+    <predicate>near</predicate>
+    <predicate>aligned_with</predicate>
+    <predicate>inside</predicate>
+    <predicate>on_top_of</predicate>
+    <predicate>supports</predicate>
+    <predicate>separated_from</predicate>
+    <predicate>left_of</predicate>
+    <predicate>right_of</predicate>
+    <predicate>above</predicate>
+    <predicate>below</predicate>
+    <predicate>in_front_of</predicate>
+    <predicate>behind</predicate>
+    <predicate>lid_off</predicate>
+  </predicates>
+</task>

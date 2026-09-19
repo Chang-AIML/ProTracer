@@ -1,0 +1,31 @@
+<task name="lift_lid_place_pot">
+  <description>Use the left arm to lift the lid of the pot and place it over the pot.</description>
+  <task_objects>
+    <object>lid</object>
+    <object>pot</object>
+  </task_objects>
+  <substages>
+    <substage>1. Move the left arm to approach and align with the lid of the pot.</substage>
+    <substage>2. Grasp the lid of the pot with the left arm.</substage>
+    <substage>3. Lift the lid of the pot using the left arm.</substage>
+    <substage>4. Move the left arm to align the lid over the pot.</substage>
+    <substage>5. Release the gripper to place the lid over the pot.</substage>
+  </substages>
+  <predicates>
+    <predicate>grasped</predicate>
+    <predicate>contact</predicate>
+    <predicate>near</predicate>
+    <predicate>aligned_with</predicate>
+    <predicate>inside</predicate>
+    <predicate>on_top_of</predicate>
+    <predicate>supports</predicate>
+    <predicate>separated_from</predicate>
+    <predicate>left_of</predicate>
+    <predicate>right_of</predicate>
+    <predicate>above</predicate>
+    <predicate>below</predicate>
+    <predicate>in_front_of</predicate>
+    <predicate>behind</predicate>
+    <predicate>lid_off</predicate>
+  </predicates>
+</task>

@@ -1,0 +1,38 @@
+<task name="stabilize_and_insert_block">
+  <description>Use the left arm to contact and stabilize the green block, then use the right arm to assemble the small block into its rightmost slot.\nSuccess condition: All actions completed in order, the small block is inserted into the rightmost slot.</description>
+  <task_objects>
+    <object>green block</object>
+    <object>small block</object>
+    <object>rightmost slot</object>
+  </task_objects>
+  <substages>
+    <substage>1. move left arm to green block</substage>
+    <substage>2. contact green block with left arm</substage>
+    <substage>3. stabilize green block with left arm</substage>
+    <substage>4. move right arm to small block</substage>
+    <substage>5. grasp small block</substage>
+    <substage>6. move and align small block to rightmost slot</substage>
+    <substage>7. insert small block into rightmost slot</substage>
+    <substage>8. release small block</substage>
+  </substages>
+  <predicates>
+    <predicate>grasped</predicate>
+    <predicate>contact</predicate>
+    <predicate>near</predicate>
+    <predicate>aligned_with</predicate>
+    <predicate>inside</predicate>
+    <predicate>on_top_of</predicate>
+    <predicate>supports</predicate>
+    <predicate>separated_from</predicate>
+    <predicate>left_of</predicate>
+    <predicate>right_of</predicate>
+    <predicate>above</predicate>
+    <predicate>below</predicate>
+    <predicate>in_front_of</predicate>
+    <predicate>behind</predicate>
+    <predicate>open</predicate>
+    <predicate>closed</predicate>
+    <predicate>inserted_into</predicate>
+    <predicate>stable</predicate>
+  </predicates>
+</task>

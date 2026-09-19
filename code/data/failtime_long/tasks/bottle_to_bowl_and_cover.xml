@@ -1,0 +1,44 @@
+<task name="bottle_to_bowl_and_cover">
+  <description>Use the right arm to remove the cup from the bottle then transfer the bottle to the bowl. Then use the left arm to place the white object to mask over the bottle.\nSuccess condition: All actions completed in order, and the bottle is inside the bowl and covered by the white object.</description>
+  <task_objects>
+    <object>cup</object>
+    <object>bottle</object>
+    <object>bowl</object>
+    <object>white object</object>
+  </task_objects>
+  <substages>
+    <substage>1. move right arm to cup on bottle</substage>
+    <substage>2. grasp cup</substage>
+    <substage>3. remove cup from bottle</substage>
+    <substage>4. release cup aside</substage>
+    <substage>5. move right arm to bottle</substage>
+    <substage>6. grasp bottle</substage>
+    <substage>7. move bottle above bowl</substage>
+    <substage>8. release bottle into bowl</substage>
+    <substage>9. move left arm to white object</substage>
+    <substage>10. grasp white object</substage>
+    <substage>11. move white object above bottle</substage>
+    <substage>12. place white object over bottle</substage>
+    <substage>13. release white object</substage>
+  </substages>
+  <predicates>
+    <predicate>grasped</predicate>
+    <predicate>contact</predicate>
+    <predicate>near</predicate>
+    <predicate>aligned_with</predicate>
+    <predicate>inside</predicate>
+    <predicate>on_top_of</predicate>
+    <predicate>supports</predicate>
+    <predicate>separated_from</predicate>
+    <predicate>left_of</predicate>
+    <predicate>right_of</predicate>
+    <predicate>above</predicate>
+    <predicate>below</predicate>
+    <predicate>in_front_of</predicate>
+    <predicate>behind</predicate>
+    <predicate>open</predicate>
+    <predicate>closed</predicate>
+    <predicate>stable</predicate>
+    <predicate>covered_by</predicate>
+  </predicates>
+</task>

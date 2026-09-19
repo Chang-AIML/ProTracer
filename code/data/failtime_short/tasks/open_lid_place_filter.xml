@@ -1,0 +1,33 @@
+<task name="open_lid_place_filter">
+  <description>Use the left arm to open the rice cooker lid, then use the right arm to place the filter inside.</description>
+  <task_objects>
+    <object>rice cooker lid</object>
+    <object>filter</object>
+  </task_objects>
+  <substages>
+    <substage>1. Move the left arm to approach and align with the rice cooker lid.</substage>
+    <substage>2. Grasp the rice cooker lid with the left arm.</substage>
+    <substage>3. Open the rice cooker lid using the left arm.</substage>
+    <substage>4. Move the right arm to approach and align with the filter.</substage>
+    <substage>5. Grasp the filter with the right arm.</substage>
+    <substage>6. Move the right arm to align with the open rice cooker.</substage>
+    <substage>7. Release the gripper to place the filter inside the rice cooker.</substage>
+  </substages>
+  <predicates>
+    <predicate>grasped</predicate>
+    <predicate>contact</predicate>
+    <predicate>near</predicate>
+    <predicate>aligned_with</predicate>
+    <predicate>inside</predicate>
+    <predicate>on_top_of</predicate>
+    <predicate>supports</predicate>
+    <predicate>separated_from</predicate>
+    <predicate>left_of</predicate>
+    <predicate>right_of</predicate>
+    <predicate>above</predicate>
+    <predicate>below</predicate>
+    <predicate>in_front_of</predicate>
+    <predicate>behind</predicate>
+    <predicate>lid_off</predicate>
+  </predicates>
+</task>

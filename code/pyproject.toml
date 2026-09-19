@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "protracer"
+version = "0.1.0"
+description = "ProTracer: proprioception-guided failure diagnosis in robot manipulation"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy", "h5py", "pillow>=10.1", "mujoco"]
+
+[project.optional-dependencies]
+ablations = ["ruptures"]   # continuous-CPD key-frame selector (Table III)
+
+[project.scripts]
+protracer = "protracer.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["protracer*"]
+
+[tool.setuptools.package-data]
+protracer = ["templates/*", "assets/*"]

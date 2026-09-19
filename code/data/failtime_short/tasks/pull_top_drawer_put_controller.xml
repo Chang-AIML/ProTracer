@@ -1,0 +1,38 @@
+<task name="pull_top_drawer_put_controller">
+  <description>Use the right arm to pull the top drawer open, then use the left arm to place the remote controller into the drawer, and finally close the drawer with the right arm.</description>
+  <task_objects>
+    <object>top drawer</object>
+    <object>remote controller</object>
+  </task_objects>
+  <substages>
+    <substage>1. Move the right arm to approach and align with the top drawer handle.</substage>
+    <substage>2. Grasp the top drawer handle with the right arm.</substage>
+    <substage>3. Pull the top drawer open using the right arm.</substage>
+    <substage>4. Move the left arm to approach and align with the remote controller.</substage>
+    <substage>5. Grasp the remote controller with the left arm.</substage>
+    <substage>6. Move the left arm to align with the open top drawer.</substage>
+    <substage>7. Release the gripper to place the remote controller into the drawer.</substage>
+    <substage>8. Move the right arm to approach and align with the top drawer handle.</substage>
+    <substage>9. Grasp the top drawer handle with the right arm.</substage>
+    <substage>10. Push the top drawer closed using the right arm.</substage>
+  </substages>
+  <predicates>
+    <predicate>grasped</predicate>
+    <predicate>contact</predicate>
+    <predicate>near</predicate>
+    <predicate>aligned_with</predicate>
+    <predicate>inside</predicate>
+    <predicate>on_top_of</predicate>
+    <predicate>supports</predicate>
+    <predicate>separated_from</predicate>
+    <predicate>left_of</predicate>
+    <predicate>right_of</predicate>
+    <predicate>above</predicate>
+    <predicate>below</predicate>
+    <predicate>in_front_of</predicate>
+    <predicate>behind</predicate>
+    <predicate>open</predicate>
+    <predicate>closed</predicate>
+    <predicate>partly_open</predicate>
+  </predicates>
+</task>

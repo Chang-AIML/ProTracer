@@ -1,0 +1,34 @@
+<task name="drag_basket_place_cube_ep1">
+  <description>Use the right gripper to drag the basket to the center of the table, then use the left gripper to grasp and place the blue cube into the basket.</description>
+  <task_objects>
+    <object>basket</object>
+    <object>table</object>
+    <object>blue cube</object>
+  </task_objects>
+  <substages>
+    <substage>1. Move the right gripper to approach and align with the basket.</substage>
+    <substage>2. Grasp the basket with the right gripper.</substage>
+    <substage>3. Drag the basket to the center of the table using the right gripper.</substage>
+    <substage>4. Release the right gripper.</substage>
+    <substage>5. Move the left gripper to approach and align with the blue cube.</substage>
+    <substage>6. Grasp the blue cube with the left gripper.</substage>
+    <substage>7. Move the left gripper to align with the basket.</substage>
+    <substage>8. Release the left gripper to place the blue cube into the basket.</substage>
+  </substages>
+  <predicates>
+    <predicate>grasped</predicate>
+    <predicate>contact</predicate>
+    <predicate>near</predicate>
+    <predicate>aligned_with</predicate>
+    <predicate>inside</predicate>
+    <predicate>on_top_of</predicate>
+    <predicate>supports</predicate>
+    <predicate>separated_from</predicate>
+    <predicate>left_of</predicate>
+    <predicate>right_of</predicate>
+    <predicate>above</predicate>
+    <predicate>below</predicate>
+    <predicate>in_front_of</predicate>
+    <predicate>behind</predicate>
+  </predicates>
+</task>

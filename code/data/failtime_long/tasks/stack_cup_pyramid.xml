@@ -1,0 +1,38 @@
+<task name="stack_cup_pyramid">
+  <description>Use the right arm to separate the six nested upside-down paper cups and stack them into a 3-2-1 pyramid structure.\nSuccess condition: All six cups are correctly stacked in the pyramid structure.</description>
+  <task_objects>
+    <object>paper cups</object>
+  </task_objects>
+  <substages>
+    <substage>1. move right arm to a paper cup</substage>
+    <substage>2. grasp paper cup</substage>
+    <substage>3. move paper cup to the empty space of the table</substage>
+    <substage>4. release the paper cup</substage>
+    <substage>5. repeat the above steps</substage>
+    <substage>6. move right arm to align with a cup</substage>
+    <substage>7. grasp cup</substage>
+    <substage>8. move cup to correct position</substage>
+    <substage>9. release cup in that position</substage>
+    <substage>10. repeat until all cupss are placed into a 3-2-1 pyramid structure</substage>
+  </substages>
+  <predicates>
+    <predicate>grasped</predicate>
+    <predicate>contact</predicate>
+    <predicate>near</predicate>
+    <predicate>aligned_with</predicate>
+    <predicate>inside</predicate>
+    <predicate>on_top_of</predicate>
+    <predicate>supports</predicate>
+    <predicate>separated_from</predicate>
+    <predicate>left_of</predicate>
+    <predicate>right_of</predicate>
+    <predicate>above</predicate>
+    <predicate>below</predicate>
+    <predicate>in_front_of</predicate>
+    <predicate>behind</predicate>
+    <predicate>open</predicate>
+    <predicate>closed</predicate>
+    <predicate>stacked</predicate>
+    <predicate>stable</predicate>
+  </predicates>
+</task>

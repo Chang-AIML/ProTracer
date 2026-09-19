@@ -1,0 +1,35 @@
+<task name="open_drawer_put_stapler">
+  <description>Use the right arm to open the drawer, then use the left arm to put the stapler inside.</description>
+  <task_objects>
+    <object>drawer</object>
+    <object>stapler</object>
+  </task_objects>
+  <substages>
+    <substage>1. Move the right arm to approach and align with the drawer handle.</substage>
+    <substage>2. Grasp the drawer handle with the right arm.</substage>
+    <substage>3. Pull the drawer open using the right arm.</substage>
+    <substage>4. Move the left arm to approach and align with the stapler.</substage>
+    <substage>5. Grasp the stapler with the left arm.</substage>
+    <substage>6. Move the left arm to align with the open drawer.</substage>
+    <substage>7. Release the gripper to place the stapler inside the drawer.</substage>
+  </substages>
+  <predicates>
+    <predicate>grasped</predicate>
+    <predicate>contact</predicate>
+    <predicate>near</predicate>
+    <predicate>aligned_with</predicate>
+    <predicate>inside</predicate>
+    <predicate>on_top_of</predicate>
+    <predicate>supports</predicate>
+    <predicate>separated_from</predicate>
+    <predicate>left_of</predicate>
+    <predicate>right_of</predicate>
+    <predicate>above</predicate>
+    <predicate>below</predicate>
+    <predicate>in_front_of</predicate>
+    <predicate>behind</predicate>
+    <predicate>open</predicate>
+    <predicate>closed</predicate>
+    <predicate>partly_open</predicate>
+  </predicates>
+</task>

@@ -1,0 +1,650 @@
+[
+ {
+  "sample": "cut_sausage_episode_28",
+  "task_id": "cut_sausage",
+  "episode": "episode_28",
+  "robot": "agilex",
+  "hdf5": "episodes/cut_sausage/episode_28.hdf5",
+  "verdict": "fail",
+  "onset": 5.416496,
+  "type": [
+   "closing_error"
+  ],
+  "reason": "Expected: Move the right arm to align with the sausage.\nObservation: the right gripper failed to close sufficiently to secure the knife during alignment with the sausage\nResult: the knife slipped and could not be positioned for cutting.",
+  "avoidance": "Close the right gripper tightly"
+ },
+ {
+  "sample": "drag_basket_place_cube_ep1_episode_150",
+  "task_id": "drag_basket_place_cube_ep1",
+  "episode": "episode_150",
+  "robot": "agilex",
+  "hdf5": "episodes/drag_basket_place_cube_ep1/episode_150.hdf5",
+  "verdict": "fail",
+  "onset": 4.16,
+  "type": [
+   "unavoidable_intervention"
+  ],
+  "reason": "Expected: Move the right arm to approach and align with the basket.\nObservation: The basket is occluded by a green plate, which prevents the right gripper from grasping it.\nResult: The right gripper failed to grasp the basket.",
+  "avoidance": "This is unavoidable; the basket is occluded by a green plate."
+ },
+ {
+  "sample": "grasp_bottle_place_bowl_episode_12",
+  "task_id": "grasp_bottle_place_bowl",
+  "episode": "episode_12",
+  "robot": "agilex",
+  "hdf5": "episodes/grasp_bottle_place_bowl/episode_12.hdf5",
+  "verdict": "fail",
+  "onset": 4.058105,
+  "type": [
+   "wrong_placement"
+  ],
+  "reason": "Expected: Move the left arm to align with the pink bowl.\nObservation: The left gripper aligned and released the bottle into the purple bowl instead of the pink bowl.\nResult: The left gripper failed to place the bottle into the pink bowl.",
+  "avoidance": "Move the left arm to align with the pink bowl instead of the purple bowl."
+ },
+ {
+  "sample": "grasp_cube_place_shelf_episode_10",
+  "task_id": "grasp_cube_place_shelf",
+  "episode": "episode_10",
+  "robot": "agilex",
+  "hdf5": "episodes/grasp_cube_place_shelf/episode_10.hdf5",
+  "verdict": "fail",
+  "onset": 4.26304,
+  "type": [
+   "translation_error"
+  ],
+  "reason": "Expected: Move the right arm to approach and align with the test tube.\nObservation: the right gripper approached the test tube, offset slightly backward\nResult: the right gripper failed to align with and grasp the test tube",
+  "avoidance": "Move the right gripper slightly forward before grasping."
+ },
+ {
+  "sample": "grasp_cube_place_shelf_episode_13",
+  "task_id": "grasp_cube_place_shelf",
+  "episode": "episode_13",
+  "robot": "agilex",
+  "hdf5": "episodes/grasp_cube_place_shelf/episode_13.hdf5",
+  "verdict": "fail",
+  "onset": 2.824841,
+  "type": [
+   "translation_error"
+  ],
+  "reason": "Expected: Move the right arm to approach and align with the test tube.\nObservation: the right gripper approached the test tube, offset significantly to the right.\nResult: the right gripper failed to grasp the test tube.",
+  "avoidance": "Move the right gripper significantly to the left before grasping."
+ },
+ {
+  "sample": "grasp_duck_put_cup_episode_13",
+  "task_id": "grasp_duck_put_cup",
+  "episode": "episode_13",
+  "robot": "agilex",
+  "hdf5": "episodes/grasp_duck_put_cup/episode_13.hdf5",
+  "verdict": "fail",
+  "onset": 4.189459,
+  "type": [
+   "closing_error"
+  ],
+  "reason": "Expected: Grasp the yellow duck.\nObservation: The right gripper failed to close sufficiently to grasp the duck.\nResult: The right gripper failed to grasp and move the duck to the cup.",
+  "avoidance": "Close the right gripper sufficiently to secure the duck when grasping."
+ },
+ {
+  "sample": "grasp_filter_place_juicer_episode_5",
+  "task_id": "grasp_filter_place_juicer",
+  "episode": "episode_5",
+  "robot": "agilex",
+  "hdf5": "episodes/grasp_filter_place_juicer/episode_5.hdf5",
+  "verdict": "fail",
+  "onset": 2.604226,
+  "type": [
+   "open_error"
+  ],
+  "reason": "Expected: Move the left arm to approach and align the filter.\nObservation: The left gripper did not open to grasp the filter.\nResult: The left gripper failed to grasp the filter.",
+  "avoidance": "Open the left gripper to grasp the filter."
+ },
+ {
+  "sample": "grasp_knife_place_drawer_episode_15",
+  "task_id": "grasp_knife_place_drawer",
+  "episode": "episode_15",
+  "robot": "agilex",
+  "hdf5": "episodes/grasp_knife_place_drawer/episode_15.hdf5",
+  "verdict": "fail",
+  "onset": 5.32,
+  "type": [
+   "open_error"
+  ],
+  "reason": "Expected: Release the gripper to place the knife in the drawer.\nObservation: the right gripper failed to open to release the knife during the placement subtask\nResult:  the knife remained clamped and could not be deposited into the drawer.",
+  "avoidance": "Open the right gripper to place the knife drawer in the release phase"
+ },
+ {
+  "sample": "grasp_spatula_put_pot_episode_1",
+  "task_id": "grasp_spatula_put_pot",
+  "episode": "episode_1",
+  "robot": "agilex",
+  "hdf5": "episodes/grasp_spatula_put_pot/episode_1.hdf5",
+  "verdict": "fail",
+  "onset": 2.031155,
+  "type": [
+   "translation_error"
+  ],
+  "reason": "Expected: Move the right arm to approach and align the wooden spatula.\nObservation: The right gripper approached the spatula, offset slightly to the left.\nResult: The right gripper failed to align with and grasp the spatula.",
+  "avoidance": "Move the right gripper slightly to the right before grasping."
+ },
+ {
+  "sample": "grasp_spatula_put_pot_episode_7",
+  "task_id": "grasp_spatula_put_pot",
+  "episode": "episode_7",
+  "robot": "agilex",
+  "hdf5": "episodes/grasp_spatula_put_pot/episode_7.hdf5",
+  "verdict": "fail",
+  "onset": 1.852631,
+  "type": [
+   "translation_error"
+  ],
+  "reason": "Expected: Move the right arm to approach and align the wooden spatula.\nObservation: The right gripper approached the spatula, offset significantly backward.\nResult: The right gripper failed to grasp the spatula.",
+  "avoidance": "Move the right gripper significantly forward."
+ },
+ {
+  "sample": "grasp_spatula_put_pot_episode_11",
+  "task_id": "grasp_spatula_put_pot",
+  "episode": "episode_11",
+  "robot": "agilex",
+  "hdf5": "episodes/grasp_spatula_put_pot/episode_11.hdf5",
+  "verdict": "fail",
+  "onset": 1.953631,
+  "type": [
+   "orientation_error",
+   "translation_error"
+  ],
+  "reason": "Expected: Move the right arm to approach and align the wooden spatula.\nObservation: The right gripper approached the spatula, offset significantly backward, with its orientation misaligned relative to the spatula’s handle.\nResult: The right gripper failed to grasp the wooden spatula.",
+  "avoidance": "Move the right gripper significantly forward, and rotate the right gripper clockwise."
+ },
+ {
+  "sample": "grasp_test_tube_place_bowl_episode_4",
+  "task_id": "grasp_test_tube_place_bowl",
+  "episode": "episode_4",
+  "robot": "agilex",
+  "hdf5": "episodes/grasp_test_tube_place_bowl/episode_4.hdf5",
+  "verdict": "fail",
+  "onset": 2.558848,
+  "type": [
+   "wrong_gripper"
+  ],
+  "reason": "Expected: Move the right arm to approach and align with the test tube.\nObservation: The right gripper was supposed to grasp the socket, but instead, the left gripper was extended.\nResult: The left gripper moved into the workspace incorrectly.",
+  "avoidance": "Move the right arm instead to approach and align with the test tube."
+ },
+ {
+  "sample": "open_box_place_cable_episode_5",
+  "task_id": "open_box_place_cable",
+  "episode": "episode_5",
+  "robot": "agilex",
+  "hdf5": "episodes/open_box_place_cable/episode_5.hdf5",
+  "verdict": "fail",
+  "onset": 5.28,
+  "type": [
+   "translation_error"
+  ],
+  "reason": "Expected: Move the left arm to approach and align the data cable.\nObservation: the left gripper approached offset slightly to the right during approach\nResult: the left gripper failed to grasp the cable",
+  "avoidance": "Move the left gripper slightly to the left."
+ },
+ {
+  "sample": "open_left_right_door_episode_16",
+  "task_id": "open_left_right_door",
+  "episode": "episode_16",
+  "robot": "agilex",
+  "hdf5": "episodes/open_left_right_door/episode_16.hdf5",
+  "verdict": "fail",
+  "onset": 10.910982,
+  "type": [
+   "closing_error"
+  ],
+  "reason": "Expected: Open the right door.\nObservation: The right gripper released the right door handle early.\nResult: The right gripper failed to open the right door.",
+  "avoidance": "The right gripper keeps holding the right door while opening."
+ },
+ {
+  "sample": "pick_block_drawer_to_plate_episode_13",
+  "task_id": "pick_block_drawer_to_plate",
+  "episode": "episode_13",
+  "robot": "agilex",
+  "hdf5": "episodes/pick_block_drawer_to_plate/episode_13.hdf5",
+  "verdict": "fail",
+  "onset": 4.934263,
+  "type": [
+   "closing_error"
+  ],
+  "reason": "Expected: Grasp the purple block.\nObservation: The right gripper failed to close sufficiently to grasp the purple block.\nResult: The right gripper failed to grasp the purple block.",
+  "avoidance": "Close the right gripper tightly to secure the purple block."
+ },
+ {
+  "sample": "pick_bowl_cube_ep2_episode_37",
+  "task_id": "pick_bowl_cube_ep2",
+  "episode": "episode_37",
+  "robot": "agilex",
+  "hdf5": "episodes/pick_bowl_cube_ep2/episode_37.hdf5",
+  "verdict": "fail",
+  "onset": 4.64,
+  "type": [
+   "unavoidable_intervention"
+  ],
+  "reason": "Expected: Move the left arm to align with the pink bowl.\nObservation: The pink bowl is occluded by human hands, which prevents the left gripper from grasping it.\nResult: The right gripper failed to grasp the pink bowl.",
+  "avoidance": "This is unavoidable; the pink bowl is occluded by human hands."
+ },
+ {
+  "sample": "pick_bowl_cube_ep2_episode_49",
+  "task_id": "pick_bowl_cube_ep2",
+  "episode": "episode_49",
+  "robot": "agilex",
+  "hdf5": "episodes/pick_bowl_cube_ep2/episode_49.hdf5",
+  "verdict": "fail",
+  "onset": 2.258105,
+  "type": [
+   "wrong_sequence"
+  ],
+  "reason": "Expected: Move the left arm to align with the pink bowl.\nObservation: The right gripper was used to pick up the yellow cube before the left gripper moved the pink bowl to the center, violating the execution order.\nResult: The left gripper failed to approach and grasp the pink bowl.",
+  "avoidance": "Move the left arm to align with the pink bowl first."
+ },
+ {
+  "sample": "pick_bowl_on_top_shelf_episode_2",
+  "task_id": "pick_bowl_on_top_shelf",
+  "episode": "episode_2",
+  "robot": "agilex",
+  "hdf5": "episodes/pick_bowl_on_top_shelf/episode_2.hdf5",
+  "verdict": "fail",
+  "onset": 6.182473,
+  "type": [
+   "wrong_placement"
+  ],
+  "reason": "Expected: Move the left arm to align with the top shelf.\nObservation: The left gripper placed the pink bowl on the second shelf instead of the top shelf.\nResult: The left gripper failed to place the pink bowl on the top shelf.",
+  "avoidance": "The left gripper needs to place the pink bowl on the top shelf."
+ },
+ {
+  "sample": "pick_bowl_on_top_shelf_episode_5",
+  "task_id": "pick_bowl_on_top_shelf",
+  "episode": "episode_5",
+  "robot": "agilex",
+  "hdf5": "episodes/pick_bowl_on_top_shelf/episode_5.hdf5",
+  "verdict": "fail",
+  "onset": 3.799871,
+  "type": [
+   "translation_error",
+   "orientation_error"
+  ],
+  "reason": "Expected: Move the left arm to approach and align the pink bowl.\nObservation: The task failed because the left gripper approached the pink bowl with its orientation misaligned relative to the pink bowl edge, causing a misalignment during grasp.\nResult: the gripper failed to secure the bowl, leading to task abortion.",
+  "avoidance": "Rotate the gripper clockwise to align with the pink bowl."
+ },
+ {
+  "sample": "pick_bowl_on_top_shelf_episode_6",
+  "task_id": "pick_bowl_on_top_shelf",
+  "episode": "episode_6",
+  "robot": "agilex",
+  "hdf5": "episodes/pick_bowl_on_top_shelf/episode_6.hdf5",
+  "verdict": "fail",
+  "onset": 4.012706,
+  "type": [
+   "wrong_object"
+  ],
+  "reason": "Expected: Move the left arm to approach and align the pink bowl.\nObservation: The left gripper incorrectly selected and moved the blue bowl instead of the pink bowl.\nResult: The left arm failed to grasp the pink bowl.",
+  "avoidance": "Move the left arm to approach and align the pink bowl instead of the blue one."
+ },
+ {
+  "sample": "pick_cube_put_pot_episode_2",
+  "task_id": "pick_cube_put_pot",
+  "episode": "episode_2",
+  "robot": "agilex",
+  "hdf5": "episodes/pick_cube_put_pot/episode_2.hdf5",
+  "verdict": "success"
+ },
+ {
+  "sample": "pick_cube_transfer_place_basket_ep1_episode_9",
+  "task_id": "pick_cube_transfer_place_basket_ep1",
+  "episode": "episode_9",
+  "robot": "agilex",
+  "hdf5": "episodes/pick_cube_transfer_place_basket_ep1/episode_9.hdf5",
+  "verdict": "success"
+ },
+ {
+  "sample": "pick_cube_transfer_place_basket_ep1_episode_36",
+  "task_id": "pick_cube_transfer_place_basket_ep1",
+  "episode": "episode_36",
+  "robot": "agilex",
+  "hdf5": "episodes/pick_cube_transfer_place_basket_ep1/episode_36.hdf5",
+  "verdict": "fail",
+  "onset": 4.845157,
+  "type": [
+   "wrong_sequence"
+  ],
+  "reason": "Expected: Move the right arm to a position where it can transfer the blue cube to the left arm.\nObservation: the right arm directly dropped the blue cube inside the basket instead of transferring it to the left arm\nResult: the right arm failed to transfer the blue cube to the left arm",
+  "avoidance": "Move the right arm to a position where it can transfer the blue cube to the left arm."
+ },
+ {
+  "sample": "pick_cup_on_left_table_episode_3",
+  "task_id": "pick_cup_on_left_table",
+  "episode": "episode_3",
+  "robot": "agilex",
+  "hdf5": "episodes/pick_cup_on_left_table/episode_3.hdf5",
+  "verdict": "fail",
+  "onset": 3.715684,
+  "type": [
+   "orientation_error"
+  ],
+  "reason": "Expected: Move the right arm to approach and align the blue cup.\nObservation: The right gripper approached the blue cup with its orientation misaligned relative to the blue cup, causing it to strike the cup’s side instead of grasping it.\nResult: The right gripper failed to grasp the blue cup edge.",
+  "avoidance": "Rotate the right gripper counterclockwise."
+ },
+ {
+  "sample": "pick_cup_on_left_table_episode_14",
+  "task_id": "pick_cup_on_left_table",
+  "episode": "episode_14",
+  "robot": "agilex",
+  "hdf5": "episodes/pick_cup_on_left_table/episode_14.hdf5",
+  "verdict": "fail",
+  "onset": 4.025489,
+  "type": [
+   "orientation_error"
+  ],
+  "reason": "Expected: Move the right arm to approach and align the blue cup.\nObservation: the right gripper approached the blue cup with its orientation misaligned relative to the blue cup\nResult: The right gripper misses the grasp with the blue cup",
+  "avoidance": "Rotate the right gripper"
+ },
+ {
+  "sample": "pick_eraser_place_right_box_episode_0",
+  "task_id": "pick_eraser_place_right_box",
+  "episode": "episode_0",
+  "robot": "agilex",
+  "hdf5": "episodes/pick_eraser_place_right_box/episode_0.hdf5",
+  "verdict": "success"
+ },
+ {
+  "sample": "pick_marker_draw_cross_ep1_episode_155",
+  "task_id": "pick_marker_draw_cross_ep1",
+  "episode": "episode_155",
+  "robot": "agilex",
+  "hdf5": "episodes/pick_marker_draw_cross_ep1/episode_155.hdf5",
+  "verdict": "fail",
+  "onset": 13.14021,
+  "type": [
+   "translation_error",
+   "wrong_placement",
+   "avoidable_intervention"
+  ],
+  "reason": "Expected: Move the right arm to align with the green cup.\nObservation: The human hand moved the cup forward, interfering with the right gripper's realignment with the green cup, resulting in the marker being released significantly backward.\nResult: The right gripper failed to release the marker into the green cup.",
+  "avoidance": "Move the right gripper forward significantly to realign with the cup."
+ },
+ {
+  "sample": "pick_mouse_basket_episode_2",
+  "task_id": "pick_mouse_basket",
+  "episode": "episode_2",
+  "robot": "agilex",
+  "hdf5": "episodes/pick_mouse_basket/episode_2.hdf5",
+  "verdict": "success"
+ },
+ {
+  "sample": "pick_object_place_left_box_ep1_episode_9",
+  "task_id": "pick_object_place_left_box_ep1",
+  "episode": "episode_9",
+  "robot": "agilex",
+  "hdf5": "episodes/pick_object_place_left_box_ep1/episode_9.hdf5",
+  "verdict": "success"
+ },
+ {
+  "sample": "pick_object_place_left_box_ep1_episode_22",
+  "task_id": "pick_object_place_left_box_ep1",
+  "episode": "episode_22",
+  "robot": "agilex",
+  "hdf5": "episodes/pick_object_place_left_box_ep1/episode_22.hdf5",
+  "verdict": "success"
+ },
+ {
+  "sample": "pick_orange_block_place_pot_episode_12",
+  "task_id": "pick_orange_block_place_pot",
+  "episode": "episode_12",
+  "robot": "agilex",
+  "hdf5": "episodes/pick_orange_block_place_pot/episode_12.hdf5",
+  "verdict": "fail",
+  "onset": 3.191052,
+  "type": [
+   "translation_error"
+  ],
+  "reason": "Expected: Move the left arm to approach and align with the orange block.\nObservation: The left gripper is offset significantly to the left and forward relative to the orange block.\nResult: The left gripper failed to grasp and move the orange block.",
+  "avoidance": "Move the left gripper significantly to the right and backward."
+ },
+ {
+  "sample": "pick_orange_block_place_pot_episode_14",
+  "task_id": "pick_orange_block_place_pot",
+  "episode": "episode_14",
+  "robot": "agilex",
+  "hdf5": "episodes/pick_orange_block_place_pot/episode_14.hdf5",
+  "verdict": "fail",
+  "onset": 3.806052,
+  "type": [
+   "closing_error"
+  ],
+  "reason": "Expected: Move the left arm to align with the pot.\nObservation: the left gripper did not hold the orange cube tightly during movement, causing it to fall onto the table\nResult: the gripper failed to place the orange cube into the red pot",
+  "avoidance": "Close the left gripper while moving"
+ },
+ {
+  "sample": "pick_pepsi_transfer_place_plate_ep1_episode_28",
+  "task_id": "pick_pepsi_transfer_place_plate_ep1",
+  "episode": "episode_28",
+  "robot": "agilex",
+  "hdf5": "episodes/pick_pepsi_transfer_place_plate_ep1/episode_28.hdf5",
+  "verdict": "fail",
+  "onset": 2.7116155,
+  "type": [
+   "wrong_gripper"
+  ],
+  "reason": "Expected: Move the left arm to approach and align the Pepsi can.\nObservation: the right gripper, instead of the planned left gripper, grasped the Pepsi can.\nResult: the left arm failed to grasp the Pepsi can.",
+  "avoidance": "Move the left arm instead of the right to approach and align the Pepsi can."
+ },
+ {
+  "sample": "pick_pepsi_transfer_place_plate_ep1_episode_41",
+  "task_id": "pick_pepsi_transfer_place_plate_ep1",
+  "episode": "episode_41",
+  "robot": "agilex",
+  "hdf5": "episodes/pick_pepsi_transfer_place_plate_ep1/episode_41.hdf5",
+  "verdict": "fail",
+  "onset": 3.675789,
+  "type": [
+   "wrong_gripper",
+   "wrong_sequence"
+  ],
+  "reason": "Expected: Move the left arm to approach and align the Pepsi can.\nObservation: The right arm, instead of the planned left arm, grabbed the Pepsi can.\nResult: The left arm failed to approach and grab the Pepsi can.",
+  "avoidance": "Move the left arm instead of the right to approach and align the Pepsi can."
+ },
+ {
+  "sample": "pick_red_marker_place_tray_episode_4",
+  "task_id": "pick_red_marker_place_tray",
+  "episode": "episode_4",
+  "robot": "agilex",
+  "hdf5": "episodes/pick_red_marker_place_tray/episode_4.hdf5",
+  "verdict": "fail",
+  "onset": 2.112539,
+  "type": [
+   "wrong_object"
+  ],
+  "reason": "Expected: Move the right arm to approach and align the red marker.\nObservation: the right gripper selected and picked up the black pen instead of the red marker during the approach phase. \nResult: the right gripper failed to grasp the red marker.",
+  "avoidance": "Move the right arm to approach and align the red marker instead of the black pen."
+ },
+ {
+  "sample": "pick_spoon_place_rice_cooker_episode_11",
+  "task_id": "pick_spoon_place_rice_cooker",
+  "episode": "episode_11",
+  "robot": "agilex",
+  "hdf5": "episodes/pick_spoon_place_rice_cooker/episode_11.hdf5",
+  "verdict": "fail",
+  "onset": 2.163641,
+  "type": [
+   "translation_error",
+   "orientation_error"
+  ],
+  "reason": "Expected: Move the right arm to approach and align the spoon.\nObservation: the right gripper approached the spoon offset slightly to the left with its orientation misaligned relative to the spoon\nResult: the gripper could not securely grasp the spoon.",
+  "avoidance": "Move the right gripper to the right slightly, and rotate the right gripper"
+ },
+ {
+  "sample": "place_cube_pot_lid_episode_6",
+  "task_id": "place_cube_pot_lid",
+  "episode": "episode_6",
+  "robot": "agilex",
+  "hdf5": "episodes/place_cube_pot_lid/episode_6.hdf5",
+  "verdict": "fail",
+  "onset": 2.979473,
+  "type": [
+   "wrong_gripper"
+  ],
+  "reason": "Expected: Move the right arm to align with the blue cube.\nObservation: The left gripper attempted to grasp the blue cube instead of the right gripper.\nResult: The right gripper failed to approach and grasp the blue cube.",
+  "avoidance": "Move the right arm instead of the left to align with the blue cube."
+ },
+ {
+  "sample": "place_duck_on_block_episode_11",
+  "task_id": "place_duck_on_block",
+  "episode": "episode_11",
+  "robot": "agilex",
+  "hdf5": "episodes/place_duck_on_block/episode_11.hdf5",
+  "verdict": "fail",
+  "onset": 9.521052,
+  "type": [
+   "translation_error"
+  ],
+  "reason": "Expected: Move the left arm to align with the green block.\nObservation: The left gripper placed the green duck slightly forward of the green block.\nResult: The left gripper failed to place the green duck on top of the green block.",
+  "avoidance": "Move the left gripper slightly backward."
+ },
+ {
+  "sample": "place_spoon_into_pot_cover_lid_episode_8",
+  "task_id": "place_spoon_into_pot_cover_lid",
+  "episode": "episode_8",
+  "robot": "agilex",
+  "hdf5": "episodes/place_spoon_into_pot_cover_lid/episode_8.hdf5",
+  "verdict": "fail",
+  "onset": 4.316837,
+  "type": [
+   "translation_error",
+   "orientation_error"
+  ],
+  "reason": "Expected: Move the left arm to approach and align the green spoon.\nObservation: The left gripper approached the green spoon, offset slightly to the left and slightly backward, with its orientation misaligned relative to the green spoon.\nResult: The left gripper failed to grasp the green spoon.",
+  "avoidance": "Move the left gripper slightly to the right and forward, and rotate the left gripper clockwise before grasping."
+ },
+ {
+  "sample": "place_spoon_on_plate_episode_4",
+  "task_id": "place_spoon_on_plate",
+  "episode": "episode_4",
+  "robot": "agilex",
+  "hdf5": "episodes/place_spoon_on_plate/episode_4.hdf5",
+  "verdict": "fail",
+  "onset": 2.634482,
+  "type": [
+   "wrong_object"
+  ],
+  "reason": "Expected: Move the left arm to approach and align the spoon.\nObservation: the right gripper incorrectly selected and placed the mouse onto the plate instead of the spoon, violating the object selection plan during the alignment subtask\nResult: the intended object (spoon) remained untouched and the plate was misused.",
+  "avoidance": "The gripper should approach and align with the spoon."
+ },
+ {
+  "sample": "pour_sausage_into_bowl_episode_1",
+  "task_id": "pour_sausage_into_bowl",
+  "episode": "episode_1",
+  "robot": "agilex",
+  "hdf5": "episodes/pour_sausage_into_bowl/episode_1.hdf5",
+  "verdict": "success"
+ },
+ {
+  "sample": "pour_sausage_into_bowl_episode_13",
+  "task_id": "pour_sausage_into_bowl",
+  "episode": "episode_13",
+  "robot": "agilex",
+  "hdf5": "episodes/pour_sausage_into_bowl/episode_13.hdf5",
+  "verdict": "fail",
+  "onset": 3.043894,
+  "type": [
+   "closing_error"
+  ],
+  "reason": "Expected: Grasp the plate with the right arm.\nObservation: the right gripper failed to close sufficiently to grasp the plate\nResult: the right gripper failed to grasp the plate",
+  "avoidance": "Close the right gripper tightly to secure the plate edge."
+ },
+ {
+  "sample": "pour_water_transparent_cup_ep1_episode_23",
+  "task_id": "pour_water_transparent_cup_ep1",
+  "episode": "episode_23",
+  "robot": "agilex",
+  "hdf5": "episodes/pour_water_transparent_cup_ep1/episode_23.hdf5",
+  "verdict": "success"
+ },
+ {
+  "sample": "pull_bottom_drawer_put_can_ep1_episode_0",
+  "task_id": "pull_bottom_drawer_put_can_ep1",
+  "episode": "episode_0",
+  "robot": "agilex",
+  "hdf5": "episodes/pull_bottom_drawer_put_can_ep1/episode_0.hdf5",
+  "verdict": "success"
+ },
+ {
+  "sample": "put_blackboard_eraser_in_transparent_box_episode_5",
+  "task_id": "put_blackboard_eraser_in_transparent_box",
+  "episode": "episode_5",
+  "robot": "agilex",
+  "hdf5": "episodes/put_blackboard_eraser_in_transparent_box/episode_5.hdf5",
+  "verdict": "fail",
+  "onset": 1.648052,
+  "type": [
+   "wrong_object"
+  ],
+  "reason": "Expected: Move the right arm to approach and align with the blackboard eraser.\nObservation: The right gripper incorrectly targeted the red marker instead of the blackboard eraser.\nResult: The right gripper failed to grab the blackboard eraser.",
+  "avoidance": "Move the right arm to approach and align with the blackboard eraser instead of the marker."
+ },
+ {
+  "sample": "put_doll_pink_plate_stapler_purple_plate_ep1_episode_1",
+  "task_id": "put_doll_pink_plate_stapler_purple_plate_ep1",
+  "episode": "episode_1",
+  "robot": "agilex",
+  "hdf5": "episodes/put_doll_pink_plate_stapler_purple_plate_ep1/episode_1.hdf5",
+  "verdict": "success"
+ },
+ {
+  "sample": "put_stapler_blue_plate_episode_12",
+  "task_id": "put_stapler_blue_plate",
+  "episode": "episode_12",
+  "robot": "agilex",
+  "hdf5": "episodes/put_stapler_blue_plate/episode_12.hdf5",
+  "verdict": "fail",
+  "onset": 2.956368,
+  "type": [
+   "orientation_error"
+  ],
+  "reason": "Expected: Move the left arm to approach and align the blue stapler.\nObservation: The left gripper approached the stapler with its orientation misaligned relative to the stapler.\nResult: The left gripper failed to grasp the stapler.",
+  "avoidance": "Rotate the left gripper counterclockwise."
+ },
+ {
+  "sample": "stack_green_cup_into_purple_cup_episode_5",
+  "task_id": "stack_green_cup_into_purple_cup",
+  "episode": "episode_5",
+  "robot": "agilex",
+  "hdf5": "episodes/stack_green_cup_into_purple_cup/episode_5.hdf5",
+  "verdict": "fail",
+  "onset": 3.845947,
+  "type": [
+   "wrong_placement"
+  ],
+  "reason": "Expected: Move the left arm to approach and align the purple cup.\nObservation: the left gripper stacked the green cup into the blue cup instead of the purple cup.\nResult: the left gripper failed to stack the green cup into the purple cup.",
+  "avoidance": "Move the left arm to approach and align the purple cup instead of the blue cup."
+ },
+ {
+  "sample": "stack_green_cup_into_purple_cup_episode_7",
+  "task_id": "stack_green_cup_into_purple_cup",
+  "episode": "episode_7",
+  "robot": "agilex",
+  "hdf5": "episodes/stack_green_cup_into_purple_cup/episode_7.hdf5",
+  "verdict": "fail",
+  "onset": 2.058946,
+  "type": [
+   "translation_error",
+   "orientation_error"
+  ],
+  "reason": "Expected: Move the left arm to approach and align the green cup.\nObservation: The left gripper approached the green cup, offset slightly to the right, with its orientation misaligned relative to the green cup.\nResult: The left gripper failed to grasp the green cup.",
+  "avoidance": "Move the left gripper slightly to the left and rotate it counterclockwise before grasping."
+ },
+ {
+  "sample": "stack_green_cup_into_purple_cup_episode_9",
+  "task_id": "stack_green_cup_into_purple_cup",
+  "episode": "episode_9",
+  "robot": "agilex",
+  "hdf5": "episodes/stack_green_cup_into_purple_cup/episode_9.hdf5",
+  "verdict": "fail",
+  "onset": 2.794577,
+  "type": [
+   "translation_error"
+  ],
+  "reason": "Expected: Move the left arm to approach and align the green cup.\nObservation: The left gripper approached the green cup, offset slightly to the right.\nResult: The left gripper failed to grasp the green cup.",
+  "avoidance": "Move the left gripper slightly to the left before grasping."
+ }
+]

@@ -1,0 +1,29 @@
+<task name="pick_red_marker_place_tray">
+  <description>Use the right arm to pick up the red marker and place it on the white tray.</description>
+  <task_objects>
+    <object>red marker</object>
+    <object>white tray</object>
+  </task_objects>
+  <substages>
+    <substage>1. Move the right arm to approach and align with the red marker.</substage>
+    <substage>2. Grasp the red marker with the right arm.</substage>
+    <substage>3. Move the right arm to align with the white tray.</substage>
+    <substage>4. Release the gripper to place the red marker on the white tray.</substage>
+  </substages>
+  <predicates>
+    <predicate>grasped</predicate>
+    <predicate>contact</predicate>
+    <predicate>near</predicate>
+    <predicate>aligned_with</predicate>
+    <predicate>inside</predicate>
+    <predicate>on_top_of</predicate>
+    <predicate>supports</predicate>
+    <predicate>separated_from</predicate>
+    <predicate>left_of</predicate>
+    <predicate>right_of</predicate>
+    <predicate>above</predicate>
+    <predicate>below</predicate>
+    <predicate>in_front_of</predicate>
+    <predicate>behind</predicate>
+  </predicates>
+</task>

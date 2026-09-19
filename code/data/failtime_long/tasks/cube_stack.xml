@@ -1,0 +1,38 @@
+<task name="cube_stack">
+  <description>Stack all the cubes into one tower: Use the right arm to pick up the five scattered cubes one at a time and place each on top of the growing stack; the left arm stays parked. Success condition: All actions completed in order, and all five cubes are stacked into a single free-standing tower with no cube left lying on the table.</description>
+  <task_objects>
+    <object>five coloured cubes</object>
+    <object>scattered tabletop cubes</object>
+    <object>single cube tower</object>
+    <object>right arm gripper</object>
+    <object>flat tabletop workspace</object>
+  </task_objects>
+  <substages>
+    <substage>1. move right arm to a loose cube</substage>
+    <substage>2. grasp the cube</substage>
+    <substage>3. lift the cube clear of the table</substage>
+    <substage>4. move the cube above the top of the stack</substage>
+    <substage>5. release the cube onto the stack</substage>
+    <substage>6. repeat for all remaining loose cubes</substage>
+  </substages>
+  <predicates>
+    <predicate>grasped</predicate>
+    <predicate>contact</predicate>
+    <predicate>near</predicate>
+    <predicate>aligned_with</predicate>
+    <predicate>inside</predicate>
+    <predicate>on_top_of</predicate>
+    <predicate>supports</predicate>
+    <predicate>separated_from</predicate>
+    <predicate>left_of</predicate>
+    <predicate>right_of</predicate>
+    <predicate>above</predicate>
+    <predicate>below</predicate>
+    <predicate>in_front_of</predicate>
+    <predicate>behind</predicate>
+    <predicate>open</predicate>
+    <predicate>closed</predicate>
+    <predicate>inserted_into</predicate>
+    <predicate>stable</predicate>
+  </predicates>
+</task>

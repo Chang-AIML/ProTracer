@@ -1,0 +1,41 @@
+<task name="block_assembly">
+  <description>Assemble the four pieces with a single arm: seat the red block and the green block side by side on the long yellow bar lying on the table, then cap them with the second long yellow bar. The bar used as the base is never lifted, and the other arm stays parked. Success condition: All actions completed in order, and the red and green blocks sit side by side on the long yellow base bar with the second long yellow bar capping them, joining all four pieces into one block.</description>
+  <task_objects>
+    <object>long yellow base bar</object>
+    <object>second long yellow bar</object>
+    <object>small red block</object>
+    <object>small green block</object>
+  </task_objects>
+  <substages>
+    <substage>1. move the arm to a loose small brick</substage>
+    <substage>2. grasp the small brick</substage>
+    <substage>3. move the small brick above the yellow base bar</substage>
+    <substage>4. release the small brick onto a free half of the base bar</substage>
+    <substage>5. repeat for the other small brick</substage>
+    <substage>6. move the arm to the remaining yellow bar</substage>
+    <substage>7. grasp the yellow bar</substage>
+    <substage>8. move the yellow bar above the two seated small bricks</substage>
+    <substage>9. release the yellow bar so it spans both bricks</substage>
+    <substage>10. press down on the assembled block to seat the layers</substage>
+  </substages>
+  <predicates>
+    <predicate>grasped</predicate>
+    <predicate>contact</predicate>
+    <predicate>near</predicate>
+    <predicate>aligned_with</predicate>
+    <predicate>inside</predicate>
+    <predicate>on_top_of</predicate>
+    <predicate>supports</predicate>
+    <predicate>separated_from</predicate>
+    <predicate>left_of</predicate>
+    <predicate>right_of</predicate>
+    <predicate>above</predicate>
+    <predicate>below</predicate>
+    <predicate>in_front_of</predicate>
+    <predicate>behind</predicate>
+    <predicate>open</predicate>
+    <predicate>closed</predicate>
+    <predicate>inserted_into</predicate>
+    <predicate>stable</predicate>
+  </predicates>
+</task>

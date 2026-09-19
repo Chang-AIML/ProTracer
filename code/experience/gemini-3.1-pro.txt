@@ -1,0 +1,11 @@
+- Partial aperture closing during approach (e.g., pre-shaping to ~6cm) is not a commit action. Set onset at the definitive full close (e.g., closing to near 0cm) intended to secure the target.
+- If an unrecoverable intervention occurs without a subsequent commit action (e.g., hovering), set onset to video end.
+- If the robot indefinitely holds an object without attempting to open/release (no commit), set onset to video end.
+- For `wrong_gripper`, if the wrong arm contacts the target (e.g., grasping), set onset at contact-start (just before closure begins). Only use the end of the gross approach phase if no task-relevant contact ever occurs.
+- Descending and closing an empty gripper is a `translation_error` at close-start, not premature transport or skipped grasp.
+- Closing to 0.0cm on rigid objects implies empty grasp. Verify lift failure via post-grasp overhead view.
+- If a failed grasp stems from visible positional offset or angular misalignment relative to the object's affordance, classify as `translation_error` or `orientation_error` at contact-start or close-start, rather than `closing_error` at the subsequent lift.
+- Inadvertently opening the gripper and losing hold of an object mid-transport, alignment, or articulation (like pulling a door) is a `closing_error`, not `wrong_placement`.
+- If a human shifts a receptacle and robot drops at original location, classify `avoidable_intervention` at release-start.
+- Trust the sensor narrative for arm identification. If it shows the unexpected arm moving while the expected arm remains stationary, classify as `wrong_gripper` instead of assuming a sensor-vision contradiction.
+- If the gripper stops closing at an aperture noticeably wider than the target's thickness (e.g., >2cm for a thin plate rim), classify as `closing_error` at the subsequent lift/transport start, not `translation_error`.

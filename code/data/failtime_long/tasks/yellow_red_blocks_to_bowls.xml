@@ -1,0 +1,38 @@
+<task name="yellow_red_blocks_to_bowls">
+  <description>Use the right arm to place the yellow block into the yellow bowl on the left, then use the left arm to place the red block into the orange ball on the right.\nSuccess condition: All actions completed in order, and the yellow block is inside the yellow bowl and the red block is inside the orange ball.</description>
+  <task_objects>
+    <object>yellow block</object>
+    <object>yellow bowl</object>
+    <object>red block</object>
+    <object>orange ball</object>
+  </task_objects>
+  <substages>
+    <substage>1. move right arm to yellow block</substage>
+    <substage>2. grasp yellow block</substage>
+    <substage>3. move yellow block above yellow bowl</substage>
+    <substage>4. release yellow block into yellow bowl</substage>
+    <substage>5. move left arm to red block</substage>
+    <substage>6. grasp red block</substage>
+    <substage>7. move red block above orange ball</substage>
+    <substage>8. release red block into orange ball</substage>
+  </substages>
+  <predicates>
+    <predicate>grasped</predicate>
+    <predicate>contact</predicate>
+    <predicate>near</predicate>
+    <predicate>aligned_with</predicate>
+    <predicate>inside</predicate>
+    <predicate>on_top_of</predicate>
+    <predicate>supports</predicate>
+    <predicate>separated_from</predicate>
+    <predicate>left_of</predicate>
+    <predicate>right_of</predicate>
+    <predicate>above</predicate>
+    <predicate>below</predicate>
+    <predicate>in_front_of</predicate>
+    <predicate>behind</predicate>
+    <predicate>open</predicate>
+    <predicate>closed</predicate>
+    <predicate>stable</predicate>
+  </predicates>
+</task>

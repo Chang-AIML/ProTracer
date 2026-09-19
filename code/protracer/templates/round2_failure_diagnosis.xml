@@ -1,0 +1,75 @@
+<stage3_judgment>
+
+  <intro>
+    You've just produced per-(t, view) visual captions and relations above.
+    Now do the final judgment using the deterministic sensor data and the
+    failure taxonomy below. Treat sensor timestamps and apertures as
+    authoritative ground truth — reconcile your visual captions against
+    them. Sensor narrates **timing and kinematics** (when, how much);
+    vision narrates **final state** (whether the target reached its goal).
+  </intro>
+
+  <expected_substages>
+${substages}
+  </expected_substages>
+
+${sensor_semantics}
+
+  <sensor_narrative>
+    Per-phase kinematics generated deterministically from sensors. Times
+    and aperture values here are AUTHORITATIVE — if your visual captions
+    disagree with anything below, side with the sensor narrative or
+    explicitly flag the contradiction.
+
+    ```
+${summary}
+    ```
+  </sensor_narrative>
+
+${taxonomy}
+
+  <your_task>
+
+    Do TWO things, in order:
+
+    ## 1. Story
+    ONE paragraph reconciling your per-(t, view) captions above with the
+    sensor narrative. Walk through the keyframe phases in order. Reference
+    sensor timestamps explicitly. If vision and sensor disagree, FLAG the
+    contradiction — do NOT average. If a substage from the expected list
+    was skipped, performed out of order, or never completed, call it out
+    by name.
+
+    **Before declaring SUCCESS**, briefly quote your high-view caption at
+    the FINAL keyframe and verify the target object is visibly in its goal
+    state (door fully open, cube inside container, lid placed flush, etc.).
+    Sensor signals like "gripper released" or "arm retracted" describe the
+    robot's action — they do NOT prove the world state. A release without
+    the object reaching its goal is a failure.
+
+    ## 2. Verdict
+    Output ONE JSON object inside a single ```json fence, matching this schema:
+
+    ```json
+    {
+      "result": "success" | "failure",
+      "onset_t": <float, seconds>,
+      "reason": {
+        "expected": "<what should have happened in the failing substage>",
+        "observed": "<what actually happened at onset, in physical terms (aperture in cm, pose offset, target identity)>",
+        "result":   "<visible downstream consequence>"
+      },
+      "type":   "[one of: wrong_sequence | wrong_object | wrong_gripper | wrong_placement | closing_error | open_error | translation_error | orientation_error | avoidable_intervention | unavoidable_intervention]",
+      "avoidance": "[smallest concrete physical action BEFORE onset_t that closes the Expected−Observed gap]"
+    }
+    ```
+
+    If `result` is `"success"`, omit `type`, `onset_t`, `reason`, `avoidance`.
+
+    Sensor timestamps (e.g. "closes 9.4 cm @ 3.00s → 0.1 cm @ 3.72s") take
+    priority over visual time estimates. Apply the per-type onset rule from
+    the taxonomy above.
+
+  </your_task>
+${experience_section}
+</stage3_judgment>

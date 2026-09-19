@@ -1,0 +1,30 @@
+<task name="grasp_knife_place_plate">
+  <description>Use the left arm to grasp the knife from the holder and place it on the plate.</description>
+  <task_objects>
+    <object>knife</object>
+    <object>holder</object>
+    <object>plate</object>
+  </task_objects>
+  <substages>
+    <substage>1. Move the left arm to approach and align with the knife holder.</substage>
+    <substage>2. Grasp the knife from the holder.</substage>
+    <substage>3. Move the left arm to align with the plate.</substage>
+    <substage>4. Release the gripper to place the knife on the plate.</substage>
+  </substages>
+  <predicates>
+    <predicate>grasped</predicate>
+    <predicate>contact</predicate>
+    <predicate>near</predicate>
+    <predicate>aligned_with</predicate>
+    <predicate>inside</predicate>
+    <predicate>on_top_of</predicate>
+    <predicate>supports</predicate>
+    <predicate>separated_from</predicate>
+    <predicate>left_of</predicate>
+    <predicate>right_of</predicate>
+    <predicate>above</predicate>
+    <predicate>below</predicate>
+    <predicate>in_front_of</predicate>
+    <predicate>behind</predicate>
+  </predicates>
+</task>

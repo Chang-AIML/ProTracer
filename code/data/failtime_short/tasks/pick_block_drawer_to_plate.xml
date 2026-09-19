@@ -1,0 +1,35 @@
+<task name="pick_block_drawer_to_plate">
+  <description>Use the right arm to pick up the purple block from inside the drawer and place it on the plate. Then, use the left arm to push the drawer closed.</description>
+  <task_objects>
+    <object>purple block</object>
+    <object>drawer</object>
+    <object>plate</object>
+  </task_objects>
+  <substages>
+    <substage>1. Move the right arm to approach and align with the purple block inside the drawer.</substage>
+    <substage>2. Grasp the purple block with the right arm.</substage>
+    <substage>3. Move the right arm to align with the plate.</substage>
+    <substage>4. Release the gripper to place the purple block on the plate.</substage>
+    <substage>5. Move the left arm to approach and align with the drawer handle.</substage>
+    <substage>6. Push the drawer closed using the left arm.</substage>
+  </substages>
+  <predicates>
+    <predicate>grasped</predicate>
+    <predicate>contact</predicate>
+    <predicate>near</predicate>
+    <predicate>aligned_with</predicate>
+    <predicate>inside</predicate>
+    <predicate>on_top_of</predicate>
+    <predicate>supports</predicate>
+    <predicate>separated_from</predicate>
+    <predicate>left_of</predicate>
+    <predicate>right_of</predicate>
+    <predicate>above</predicate>
+    <predicate>below</predicate>
+    <predicate>in_front_of</predicate>
+    <predicate>behind</predicate>
+    <predicate>open</predicate>
+    <predicate>closed</predicate>
+    <predicate>partly_open</predicate>
+  </predicates>
+</task>

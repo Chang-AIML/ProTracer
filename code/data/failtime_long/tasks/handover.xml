@@ -1,0 +1,41 @@
+<task name="handover">
+  <description>Hand the three items across the central partition: the arm on the item side picks up each object and passes it to the other arm in mid-air above the partition, and the receiving arm places it into the container on its own side. Success condition: All three items are passed arm-to-arm across the partition and end up in the container.</description>
+  <task_objects>
+    <object>popcorn cup</object>
+    <object>block</object>
+    <object>black cylindrical block</object>
+    <object>receiving container</object>
+    <object>central partition</object>
+  </task_objects>
+  <substages>
+    <substage>1. move passer arm to an item on the object side</substage>
+    <substage>2. grasp the item</substage>
+    <substage>3. lift the item into mid-air above the barrier</substage>
+    <substage>4. move receiver arm across to the held item</substage>
+    <substage>5. grasp the item with the receiver arm</substage>
+    <substage>6. release the item from the passer arm</substage>
+    <substage>7. move the item above the receptacle on the receiver side</substage>
+    <substage>8. release the item into the receptacle</substage>
+    <substage>9. repeat for all three items</substage>
+  </substages>
+  <predicates>
+    <predicate>grasped</predicate>
+    <predicate>contact</predicate>
+    <predicate>near</predicate>
+    <predicate>aligned_with</predicate>
+    <predicate>inside</predicate>
+    <predicate>on_top_of</predicate>
+    <predicate>supports</predicate>
+    <predicate>separated_from</predicate>
+    <predicate>left_of</predicate>
+    <predicate>right_of</predicate>
+    <predicate>above</predicate>
+    <predicate>below</predicate>
+    <predicate>in_front_of</predicate>
+    <predicate>behind</predicate>
+    <predicate>open</predicate>
+    <predicate>closed</predicate>
+    <predicate>inserted_into</predicate>
+    <predicate>stable</predicate>
+  </predicates>
+</task>

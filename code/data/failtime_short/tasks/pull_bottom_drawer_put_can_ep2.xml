@@ -1,0 +1,39 @@
+<task name="pull_bottom_drawer_put_can_ep2">
+  <description>Use the left arm to pull the bottom drawer open, then use the right arm to place the can on the table into the drawer, and finally close the drawer with the left arm.</description>
+  <task_objects>
+    <object>bottom drawer</object>
+    <object>can</object>
+    <object>table</object>
+  </task_objects>
+  <substages>
+    <substage>1. Move the left arm to approach and align with the bottom drawer handle.</substage>
+    <substage>2. Grasp the bottom drawer handle with the left arm.</substage>
+    <substage>3. Pull the bottom drawer open using the left arm.</substage>
+    <substage>4. Move the right arm to approach and align with the can on the table.</substage>
+    <substage>5. Grasp the can with the right arm.</substage>
+    <substage>6. Move the right arm to align with the open bottom drawer.</substage>
+    <substage>7. Release the gripper to place the can into the bottom drawer.</substage>
+    <substage>8. Move the left arm to approach and align with the bottom drawer handle.</substage>
+    <substage>9. Grasp the bottom drawer handle with the left arm.</substage>
+    <substage>10. Push the bottom drawer closed using the left arm.</substage>
+  </substages>
+  <predicates>
+    <predicate>grasped</predicate>
+    <predicate>contact</predicate>
+    <predicate>near</predicate>
+    <predicate>aligned_with</predicate>
+    <predicate>inside</predicate>
+    <predicate>on_top_of</predicate>
+    <predicate>supports</predicate>
+    <predicate>separated_from</predicate>
+    <predicate>left_of</predicate>
+    <predicate>right_of</predicate>
+    <predicate>above</predicate>
+    <predicate>below</predicate>
+    <predicate>in_front_of</predicate>
+    <predicate>behind</predicate>
+    <predicate>open</predicate>
+    <predicate>closed</predicate>
+    <predicate>partly_open</predicate>
+  </predicates>
+</task>

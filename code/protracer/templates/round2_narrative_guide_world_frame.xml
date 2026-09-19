@@ -1,0 +1,38 @@
+<sensor_semantics>
+
+  <world_frame>
+    Both arms operate in a single URDF world frame:
+      • +X = forward (away from camera, into the scene)
+      • +Y = left
+      • +Z = up
+  </world_frame>
+
+  <translation_per_phase>
+    - "N cm forward/backward/left/right/up/down" — net displacement
+      components in world frame (end-of-phase pose minus start-of-phase pose).
+    - "path N cm" — arc length = sum of frame-to-frame distances over the
+      phase (always ≥ |net displacement|). path ≫ |displacement| means
+      the arm did not follow a straight trajectory.
+  </translation_per_phase>
+
+  <rotation_per_phase format='"X arm wrist: net N°, total N°, stability S"'>
+    - "net N°"   — magnitude of net rotation: the single equivalent
+                   rotation angle from start orientation to end orientation.
+    - "total N°" — cumulative angular path: sum of |frame-to-frame rotation
+                   magnitudes| over the phase. total ≥ net always; equality
+                   means the rotation was monotonic.
+    - "stability S ∈ [0,1]" — axis-consistency = how concentrated the
+      instantaneous rotation axis is across the phase.
+        S = 1  → every step shares the same axis and sign (single-axis
+                 monotonic motion).
+        S &lt; 1 → axis switched directions, or different steps used different
+                 axes, or both. A +X°-then-−X° reversal drives S toward 0.
+    - If net + total &lt; 5° (effectively no rotation), the wrist line is
+      omitted from that phase entirely.
+    - Practical reading: small translation path + large total + high
+      stability → an active wrist-driven rotation (pour / tilt / turn).
+      Large total alongside large translation path usually means the wrist
+      is dragged by the arm sweep, not an active turn.
+  </rotation_per_phase>
+
+</sensor_semantics>

@@ -1,0 +1,31 @@
+<task name="pick_tape_thread_marker">
+  <description>Use the right arm to grasp the tape and thread the tape's central hole through the upright marker on the table.</description>
+  <task_objects>
+    <object>tape</object>
+    <object>marker</object>
+    <object>table</object>
+  </task_objects>
+  <substages>
+    <substage>1. Move the right arm to approach and align with the tape.</substage>
+    <substage>2. Grasp the tape.</substage>
+    <substage>3. Move the right arm to align the tape's central hole with the upright marker.</substage>
+    <substage>4. Lower the right arm to thread the tape's central hole through the upright marker.</substage>
+    <substage>5. Release the gripper to leave the tape on the marker.</substage>
+  </substages>
+  <predicates>
+    <predicate>grasped</predicate>
+    <predicate>contact</predicate>
+    <predicate>near</predicate>
+    <predicate>aligned_with</predicate>
+    <predicate>inside</predicate>
+    <predicate>on_top_of</predicate>
+    <predicate>supports</predicate>
+    <predicate>separated_from</predicate>
+    <predicate>left_of</predicate>
+    <predicate>right_of</predicate>
+    <predicate>above</predicate>
+    <predicate>below</predicate>
+    <predicate>in_front_of</predicate>
+    <predicate>behind</predicate>
+  </predicates>
+</task>

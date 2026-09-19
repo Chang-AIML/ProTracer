@@ -1,0 +1,33 @@
+<task name="pour_cubes_into_box">
+  <description>Use the right arm to pour the cubes from the cup into the yellow box.</description>
+  <task_objects>
+    <object>cubes</object>
+    <object>cup</object>
+    <object>yellow box</object>
+  </task_objects>
+  <substages>
+    <substage>1. Move the right arm to approach and align with the cup.</substage>
+    <substage>2. Grasp the cup with the right arm.</substage>
+    <substage>3. Move the right arm to align the cup above the yellow box.</substage>
+    <substage>4. Tilt the cup to pour the cubes into the yellow box.</substage>
+    <substage>5. Release the cup.</substage>
+  </substages>
+  <predicates>
+    <predicate>grasped</predicate>
+    <predicate>contact</predicate>
+    <predicate>near</predicate>
+    <predicate>aligned_with</predicate>
+    <predicate>inside</predicate>
+    <predicate>on_top_of</predicate>
+    <predicate>supports</predicate>
+    <predicate>separated_from</predicate>
+    <predicate>left_of</predicate>
+    <predicate>right_of</predicate>
+    <predicate>above</predicate>
+    <predicate>below</predicate>
+    <predicate>in_front_of</predicate>
+    <predicate>behind</predicate>
+    <predicate>tilted_above</predicate>
+    <predicate>pouring_into</predicate>
+  </predicates>
+</task>

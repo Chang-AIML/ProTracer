@@ -1,0 +1,33 @@
+<task name="hold_socket_plug">
+  <description>Use the right arm to hold the socket, left arm to insert the plug into it.</description>
+  <task_objects>
+    <object>socket</object>
+    <object>plug</object>
+  </task_objects>
+  <substages>
+    <substage>1. Move the right arm to approach and align with the socket.</substage>
+    <substage>2. Grasp the socket with the right arm.</substage>
+    <substage>3. Move the left arm to approach and align with the plug.</substage>
+    <substage>4. Grasp the plug with the left arm.</substage>
+    <substage>5. Move the left arm to align the plug with the socket held by the right arm.</substage>
+    <substage>6. Insert the plug into the socket using the left arm.</substage>
+  </substages>
+  <predicates>
+    <predicate>grasped</predicate>
+    <predicate>contact</predicate>
+    <predicate>near</predicate>
+    <predicate>aligned_with</predicate>
+    <predicate>inside</predicate>
+    <predicate>on_top_of</predicate>
+    <predicate>supports</predicate>
+    <predicate>separated_from</predicate>
+    <predicate>left_of</predicate>
+    <predicate>right_of</predicate>
+    <predicate>above</predicate>
+    <predicate>below</predicate>
+    <predicate>in_front_of</predicate>
+    <predicate>behind</predicate>
+    <predicate>plugged_in</predicate>
+    <predicate>unplugged</predicate>
+  </predicates>
+</task>

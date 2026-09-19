@@ -1,0 +1,42 @@
+<task name="empty_bowl_insert_block">
+  <description>Use the right arm to pick up all blocks from the bowl and place them on the table. Then use the left arm to assemble the small block into the second slot from the right of the 4 slot block.\nSuccess condition: All actions completed in order, and the small block is properly assembled into the second slot from the right of the 4 slot block.</description>
+  <task_objects>
+    <object>bowl</object>
+    <object>blocks</object>
+    <object>small block</object>
+    <object>4 slot block</object>
+  </task_objects>
+  <substages>
+    <substage>1. move right arm to blocks in bowl</substage>
+    <substage>2. grasp a block</substage>
+    <substage>3. move block to table</substage>
+    <substage>4. release block on table</substage>
+    <substage>5. repeat until bowl is empty</substage>
+    <substage>6. move left arm to small block</substage>
+    <substage>7. grasp small block</substage>
+    <substage>8. move and align the small block to second slot from right</substage>
+    <substage>9. insert small block into slot</substage>
+    <substage>10. release small block</substage>
+  </substages>
+  <predicates>
+    <predicate>grasped</predicate>
+    <predicate>contact</predicate>
+    <predicate>near</predicate>
+    <predicate>aligned_with</predicate>
+    <predicate>inside</predicate>
+    <predicate>on_top_of</predicate>
+    <predicate>supports</predicate>
+    <predicate>separated_from</predicate>
+    <predicate>left_of</predicate>
+    <predicate>right_of</predicate>
+    <predicate>above</predicate>
+    <predicate>below</predicate>
+    <predicate>in_front_of</predicate>
+    <predicate>behind</predicate>
+    <predicate>open</predicate>
+    <predicate>closed</predicate>
+    <predicate>empty</predicate>
+    <predicate>inserted_into</predicate>
+    <predicate>stable</predicate>
+  </predicates>
+</task>

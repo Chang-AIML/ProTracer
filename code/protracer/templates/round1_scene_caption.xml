@@ -1,0 +1,61 @@
+<stage2_instructions>
+
+  <setup>
+    I will show you ${n_boundaries} key-frame timestamps from one bimanual
+    manipulation episode (${n_imgs} images total).
+
+    Task: ${task_desc}
+
+    Views per timestamp, in order:
+      L = cam_left_wrist   — close-up on the LEFT gripper's fingers
+      H = cam_high         — overhead, full workspace
+      R = cam_right_wrist  — close-up on the RIGHT gripper's fingers
+  </setup>
+
+  <what_to_describe>
+    Sensor data already covers gripper aperture, arm pose, and per-phase
+    kinematics — don't repeat those numbers. Focus on what vision uniquely
+    resolves:
+
+      - Wrist views: gripper STATE — is it open, closed on empty space, or
+        actually holding an object?
+      - Overhead view: object LAYOUT and INTER-OBJECT relations.
+      - Any task-specific configuration cues you can see (e.g. cable still
+        plugged in, lid resting on pot).
+  </what_to_describe>
+
+  <naming_and_vocabulary note="reference, not strict">
+    For task-relevant objects, prefer the canonical names from the system
+    prompt's &lt;task_objects&gt;; use left_gripper / right_gripper for the
+    two arms. For spatial / contact relations, the &lt;predicates&gt; list
+    there is a suggested vocabulary — use it when it fits, otherwise
+    describe in your own words. Background props can be named freely.
+  </naming_and_vocabulary>
+
+  <output_format>
+    For each timestamp, emit a block matching this template. Items in
+    [square brackets] are placeholders you fill in.
+
+    &lt;caption t="T.TTs"&gt;
+    - **L**: [one short sentence about the LEFT gripper at this instant]
+    - **H**: [one short sentence about object layout and dominant scene state]
+    - **R**: [one short sentence about the RIGHT gripper at this instant]
+    - **relations**:
+        - [subject] [predicate] [object]
+        - ...
+    &lt;/caption&gt;
+
+    Omit any L / H / R bullet whose view is not provided at that timestamp.
+    Omit the relations block when nothing is in salient contact or alignment.
+  </output_format>
+
+  <do_not>
+    Do NOT speculate about motion, intent, success / failure, or what
+    happens between frames — you are describing one instant per cell.
+  </do_not>
+
+</stage2_instructions>
+
+Now the frames. Each timestamp is wrapped in &lt;timestamp t="..."&gt;, and
+each image inside it carries its own &lt;frame view="L|H|R" cam="..."&gt; tag:
+

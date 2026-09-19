@@ -1,0 +1,29 @@
+<task name="grasp_spatula_place_basket">
+  <description>Use the left arm to grasp the wooden spatula and place it in the blue basket.</description>
+  <task_objects>
+    <object>wooden spatula</object>
+    <object>blue basket</object>
+  </task_objects>
+  <substages>
+    <substage>1. Move the left arm to approach and align with the wooden spatula.</substage>
+    <substage>2. Grasp the wooden spatula with the left arm.</substage>
+    <substage>3. Move the left arm to align with the blue basket.</substage>
+    <substage>4. Release the gripper to place the wooden spatula into the blue basket.</substage>
+  </substages>
+  <predicates>
+    <predicate>grasped</predicate>
+    <predicate>contact</predicate>
+    <predicate>near</predicate>
+    <predicate>aligned_with</predicate>
+    <predicate>inside</predicate>
+    <predicate>on_top_of</predicate>
+    <predicate>supports</predicate>
+    <predicate>separated_from</predicate>
+    <predicate>left_of</predicate>
+    <predicate>right_of</predicate>
+    <predicate>above</predicate>
+    <predicate>below</predicate>
+    <predicate>in_front_of</predicate>
+    <predicate>behind</predicate>
+  </predicates>
+</task>

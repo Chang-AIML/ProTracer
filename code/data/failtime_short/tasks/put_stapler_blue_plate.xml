@@ -1,0 +1,29 @@
+<task name="put_stapler_blue_plate">
+  <description>Use the left arm to put the blue stapler into the blue plate.</description>
+  <task_objects>
+    <object>blue stapler</object>
+    <object>blue plate</object>
+  </task_objects>
+  <substages>
+    <substage>1. Move the left arm to approach and align with the blue stapler.</substage>
+    <substage>2. Grasp the blue stapler.</substage>
+    <substage>3. Move the left arm to align with the blue plate.</substage>
+    <substage>4. Release the gripper to place the blue stapler into the blue plate.</substage>
+  </substages>
+  <predicates>
+    <predicate>grasped</predicate>
+    <predicate>contact</predicate>
+    <predicate>near</predicate>
+    <predicate>aligned_with</predicate>
+    <predicate>inside</predicate>
+    <predicate>on_top_of</predicate>
+    <predicate>supports</predicate>
+    <predicate>separated_from</predicate>
+    <predicate>left_of</predicate>
+    <predicate>right_of</predicate>
+    <predicate>above</predicate>
+    <predicate>below</predicate>
+    <predicate>in_front_of</predicate>
+    <predicate>behind</predicate>
+  </predicates>
+</task>

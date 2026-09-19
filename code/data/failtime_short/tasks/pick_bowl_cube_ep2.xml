@@ -1,0 +1,34 @@
+<task name="pick_bowl_cube_ep2">
+  <description>Use the left arm to pick up the pink bowl and place it in the middle of the table. Then use the right arm to pick up the yellow cube and place it into the pink bowl.</description>
+  <task_objects>
+    <object>pink bowl</object>
+    <object>table</object>
+    <object>yellow cube</object>
+  </task_objects>
+  <substages>
+    <substage>1. Move the left arm to approach and align with the pink bowl.</substage>
+    <substage>2. Grasp the pink bowl with the left arm.</substage>
+    <substage>3. Move the left arm to align with the middle of the table.</substage>
+    <substage>4. Release the gripper to place the pink bowl in the middle of the table.</substage>
+    <substage>5. Move the right arm to approach and align with the yellow cube.</substage>
+    <substage>6. Grasp the yellow cube with the right arm.</substage>
+    <substage>7. Move the right arm to align with the pink bowl.</substage>
+    <substage>8. Release the gripper to place the yellow cube into the pink bowl.</substage>
+  </substages>
+  <predicates>
+    <predicate>grasped</predicate>
+    <predicate>contact</predicate>
+    <predicate>near</predicate>
+    <predicate>aligned_with</predicate>
+    <predicate>inside</predicate>
+    <predicate>on_top_of</predicate>
+    <predicate>supports</predicate>
+    <predicate>separated_from</predicate>
+    <predicate>left_of</predicate>
+    <predicate>right_of</predicate>
+    <predicate>above</predicate>
+    <predicate>below</predicate>
+    <predicate>in_front_of</predicate>
+    <predicate>behind</predicate>
+  </predicates>
+</task>

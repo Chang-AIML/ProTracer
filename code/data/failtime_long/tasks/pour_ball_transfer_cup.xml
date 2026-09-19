@@ -1,0 +1,40 @@
+<task name="pour_ball_transfer_cup">
+  <description>Use the right arm to pour the ball from the yellow cup into the orange bowl. Then use the left arm to pick up the ball from the orange bowl and transfer it into the blue cup.\nSuccess condition: All actions completed in order, and the ball is inside the blue cup.</description>
+  <task_objects>
+    <object>yellow cup</object>
+    <object>orange bowl</object>
+    <object>blue cup</object>
+    <object>ball</object>
+  </task_objects>
+  <substages>
+    <substage>1. move right arm to align with yellow cup</substage>
+    <substage>2. grasp yellow cup</substage>
+    <substage>3. move yellow cup above orange bowl</substage>
+    <substage>4. pour ball into orange bowl</substage>
+    <substage>5. put down the yellow cup</substage>
+    <substage>6. release yellow cup</substage>
+    <substage>7. move left arm to align with ball in orange bowl</substage>
+    <substage>8. grasp ball</substage>
+    <substage>9. move ball above blue cup</substage>
+    <substage>10. release ball into blue cup</substage>
+  </substages>
+  <predicates>
+    <predicate>grasped</predicate>
+    <predicate>contact</predicate>
+    <predicate>near</predicate>
+    <predicate>aligned_with</predicate>
+    <predicate>inside</predicate>
+    <predicate>on_top_of</predicate>
+    <predicate>supports</predicate>
+    <predicate>separated_from</predicate>
+    <predicate>left_of</predicate>
+    <predicate>right_of</predicate>
+    <predicate>above</predicate>
+    <predicate>below</predicate>
+    <predicate>in_front_of</predicate>
+    <predicate>behind</predicate>
+    <predicate>open</predicate>
+    <predicate>closed</predicate>
+    <predicate>tilted</predicate>
+  </predicates>
+</task>

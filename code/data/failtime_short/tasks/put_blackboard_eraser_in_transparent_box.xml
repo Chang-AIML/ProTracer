@@ -1,0 +1,29 @@
+<task name="put_blackboard_eraser_in_transparent_box">
+  <description>Use the right arm to put the blackboard eraser into the transparent box.</description>
+  <task_objects>
+    <object>blackboard eraser</object>
+    <object>transparent box</object>
+  </task_objects>
+  <substages>
+    <substage>1. Move the right arm to approach and align with the blackboard eraser.</substage>
+    <substage>2. Grasp the blackboard eraser.</substage>
+    <substage>3. Move the right arm to align with the transparent box.</substage>
+    <substage>4. Release the gripper to place the blackboard eraser into the transparent box.</substage>
+  </substages>
+  <predicates>
+    <predicate>grasped</predicate>
+    <predicate>contact</predicate>
+    <predicate>near</predicate>
+    <predicate>aligned_with</predicate>
+    <predicate>inside</predicate>
+    <predicate>on_top_of</predicate>
+    <predicate>supports</predicate>
+    <predicate>separated_from</predicate>
+    <predicate>left_of</predicate>
+    <predicate>right_of</predicate>
+    <predicate>above</predicate>
+    <predicate>below</predicate>
+    <predicate>in_front_of</predicate>
+    <predicate>behind</predicate>
+  </predicates>
+</task>

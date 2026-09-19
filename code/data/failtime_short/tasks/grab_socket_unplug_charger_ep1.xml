@@ -1,0 +1,32 @@
+<task name="grab_socket_unplug_charger_ep1">
+  <description>Grab the socket with the right arm and unplug the charger with the left arm.</description>
+  <task_objects>
+    <object>socket</object>
+    <object>charger</object>
+  </task_objects>
+  <substages>
+    <substage>1. Move the right arm to approach and align with the socket.</substage>
+    <substage>2. Grasp the socket with the right arm.</substage>
+    <substage>3. Move the left arm to approach and align with the charger.</substage>
+    <substage>4. Grasp the charger with the left arm.</substage>
+    <substage>5. Unplug the charger from the socket using the left arm.</substage>
+  </substages>
+  <predicates>
+    <predicate>grasped</predicate>
+    <predicate>contact</predicate>
+    <predicate>near</predicate>
+    <predicate>aligned_with</predicate>
+    <predicate>inside</predicate>
+    <predicate>on_top_of</predicate>
+    <predicate>supports</predicate>
+    <predicate>separated_from</predicate>
+    <predicate>left_of</predicate>
+    <predicate>right_of</predicate>
+    <predicate>above</predicate>
+    <predicate>below</predicate>
+    <predicate>in_front_of</predicate>
+    <predicate>behind</predicate>
+    <predicate>plugged_in</predicate>
+    <predicate>unplugged</predicate>
+  </predicates>
+</task>

@@ -1,0 +1,40 @@
+<task name="balls_to_egg_carton">
+  <description>Place all balls into the six slots egg carton: Use the right arm to place the three balls on the right side of the workspace, and use the left arm to place the balls on the left side of the workspace. \nSuccess condition: All actions completed in order, and all six balls are in the six slots of the egg carton.</description>
+  <task_objects>
+    <object>six slots egg carton</object>
+    <object>right-side balls</object>
+    <object>left-side balls</object>
+  </task_objects>
+  <substages>
+    <substage>1. move right arm to a right-side ball</substage>
+    <substage>2. grasp right-side ball</substage>
+    <substage>3. move right-side ball above egg carton slot</substage>
+    <substage>4. release right-side ball into slot</substage>
+    <substage>5. repeat for all right-side balls</substage>
+    <substage>6. move left arm to a left-side ball</substage>
+    <substage>7. grasp left-side ball</substage>
+    <substage>8. move left-side ball above egg carton slot</substage>
+    <substage>9. release left-side ball into slot</substage>
+    <substage>10. repeat for all left-side balls</substage>
+  </substages>
+  <predicates>
+    <predicate>grasped</predicate>
+    <predicate>contact</predicate>
+    <predicate>near</predicate>
+    <predicate>aligned_with</predicate>
+    <predicate>inside</predicate>
+    <predicate>on_top_of</predicate>
+    <predicate>supports</predicate>
+    <predicate>separated_from</predicate>
+    <predicate>left_of</predicate>
+    <predicate>right_of</predicate>
+    <predicate>above</predicate>
+    <predicate>below</predicate>
+    <predicate>in_front_of</predicate>
+    <predicate>behind</predicate>
+    <predicate>open</predicate>
+    <predicate>closed</predicate>
+    <predicate>inserted_into</predicate>
+    <predicate>stable</predicate>
+  </predicates>
+</task>

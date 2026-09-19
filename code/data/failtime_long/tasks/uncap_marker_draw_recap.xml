@@ -1,0 +1,46 @@
+<task name="uncap_marker_draw_recap">
+  <description>Use the right arm to pick up the marker and align it to the left arm to grasp the cap. Use the left arm to hold it, and use the right arm to remove the cap. Then use the right arm to write a line on the whiteboard. Finally, use the right arm to align the marker with the cap held by the left arm, to cap the marker, and place it into the cup.\nSuccess condition: All actions completed in order, and the a line is written on the whiteboard, the marker is properly capped and inside the cup.</description>
+  <task_objects>
+    <object>marker</object>
+    <object>cap</object>
+    <object>whiteboard</object>
+    <object>cup</object>
+  </task_objects>
+  <substages>
+    <substage>1. move right arm to marker</substage>
+    <substage>2. grasp marker</substage>
+    <substage>3. move marker and make sure cap is towards left arm</substage>
+    <substage>4. move left arm to the cap</substage>
+    <substage>5. grasp cap with left arm</substage>
+    <substage>6. right arm removes marker from cap</substage>
+    <substage>7. move marker tip to whiteboard</substage>
+    <substage>8. write line on whiteboard with marker</substage>
+    <substage>9. move marker back to cap</substage>
+    <substage>10. cap marker</substage>
+    <substage>11. left arm releases cap</substage>
+    <substage>12. right arm move capped marker above cup</substage>
+    <substage>13. release marker into cup</substage>
+  </substages>
+  <predicates>
+    <predicate>grasped</predicate>
+    <predicate>contact</predicate>
+    <predicate>near</predicate>
+    <predicate>aligned_with</predicate>
+    <predicate>inside</predicate>
+    <predicate>on_top_of</predicate>
+    <predicate>supports</predicate>
+    <predicate>separated_from</predicate>
+    <predicate>left_of</predicate>
+    <predicate>right_of</predicate>
+    <predicate>above</predicate>
+    <predicate>below</predicate>
+    <predicate>in_front_of</predicate>
+    <predicate>behind</predicate>
+    <predicate>open</predicate>
+    <predicate>closed</predicate>
+    <predicate>stable</predicate>
+    <predicate>written_on</predicate>
+    <predicate>capped</predicate>
+    <predicate>uncapped</predicate>
+  </predicates>
+</task>

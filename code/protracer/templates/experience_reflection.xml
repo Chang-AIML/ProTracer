@@ -1,0 +1,58 @@
+<round4_lesson_extraction>
+
+  <intro>
+    You can see your Stage-3 verdict above and your full reasoning. Below
+    is the ground-truth — the correct answer.
+
+    Reflect on why your earlier decision diverged. What observation,
+    signal, or reasoning step did you miss or get wrong? Then suggest a
+    transferable rule your future self should apply on similar episodes
+    so this mistake doesn't repeat.
+
+    Focus on the BIGGEST gap first. Priority: **verdict** (success/failure)
+    > **onset** > **type**. If verdict itself is wrong, write a rule about
+    **failure detection**, not type labeling — a type rule cannot fix a
+    verdict miss because you never reach the type-classification step.
+  </intro>
+
+  <ground_truth note="from human annotator; authoritative">
+${ground_truth_json}
+  </ground_truth>
+
+  <prior_experience note="rules already in your buffer, 1-indexed">
+${prior_experience}
+  </prior_experience>
+
+  <your_task>
+    Write a brief introspection (1-2 sentences on what specifically you
+    missed) — then your suggestion in ONE of these formats:
+
+    ```lesson
+    ADD: <new transferable rule, ≤40 words>
+    ```
+
+    or
+
+    ```lesson
+    UPDATE <i>: <better wording of rule #i, ≤40 words>
+    ```
+
+    or
+
+    ```lesson
+    MERGE [<i>, <j>]: <merged rule, ≤40 words>
+    ```
+
+    or
+
+    ```lesson
+    NONE
+    ```
+
+    (NONE if no transferable rule applies, or buffer already covers it.)
+
+    Avoid: task names / episode IDs / specific seconds; rules that just
+    restate a taxonomy name in different words.
+  </your_task>
+
+</round4_lesson_extraction>

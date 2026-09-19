@@ -1,0 +1,36 @@
+<task name="open_left_right_door">
+  <description>Use the left arm to grasp the left door handle and open the left door. Then use the right arm to grasp the right door handle and open the right door.</description>
+  <task_objects>
+    <object>left door handle</object>
+    <object>left door</object>
+    <object>right door handle</object>
+    <object>right door</object>
+  </task_objects>
+  <substages>
+    <substage>1. Move the left arm to approach and align with the left door handle.</substage>
+    <substage>2. Grasp the left door handle with the left arm.</substage>
+    <substage>3. Pull the left door open using the left arm.</substage>
+    <substage>4. Move the right arm to approach and align with the right door handle.</substage>
+    <substage>5. Grasp the right door handle with the right arm.</substage>
+    <substage>6. Pull the right door open using the right arm.</substage>
+  </substages>
+  <predicates>
+    <predicate>grasped</predicate>
+    <predicate>contact</predicate>
+    <predicate>near</predicate>
+    <predicate>aligned_with</predicate>
+    <predicate>inside</predicate>
+    <predicate>on_top_of</predicate>
+    <predicate>supports</predicate>
+    <predicate>separated_from</predicate>
+    <predicate>left_of</predicate>
+    <predicate>right_of</predicate>
+    <predicate>above</predicate>
+    <predicate>below</predicate>
+    <predicate>in_front_of</predicate>
+    <predicate>behind</predicate>
+    <predicate>open</predicate>
+    <predicate>closed</predicate>
+    <predicate>partly_open</predicate>
+  </predicates>
+</task>

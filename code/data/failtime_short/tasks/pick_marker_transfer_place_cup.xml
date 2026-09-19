@@ -1,0 +1,33 @@
+<task name="pick_marker_transfer_place_cup">
+  <description>Use the right arm to grasp the marker, transfer it to the left arm and then place it in the cup.</description>
+  <task_objects>
+    <object>marker</object>
+    <object>cup</object>
+  </task_objects>
+  <substages>
+    <substage>1. Move the right arm to approach and align with the marker.</substage>
+    <substage>2. Grasp the marker with the right arm.</substage>
+    <substage>3. Move the right arm to a transfer position.</substage>
+    <substage>4. Move the left arm to the transfer position to receive the marker.</substage>
+    <substage>5. Grasp the marker with the left arm.</substage>
+    <substage>6. Release the marker from the right arm.</substage>
+    <substage>7. Move the left arm to align with the cup.</substage>
+    <substage>8. Release the gripper to place the marker into the cup.</substage>
+  </substages>
+  <predicates>
+    <predicate>grasped</predicate>
+    <predicate>contact</predicate>
+    <predicate>near</predicate>
+    <predicate>aligned_with</predicate>
+    <predicate>inside</predicate>
+    <predicate>on_top_of</predicate>
+    <predicate>supports</predicate>
+    <predicate>separated_from</predicate>
+    <predicate>left_of</predicate>
+    <predicate>right_of</predicate>
+    <predicate>above</predicate>
+    <predicate>below</predicate>
+    <predicate>in_front_of</predicate>
+    <predicate>behind</predicate>
+  </predicates>
+</task>

@@ -1,0 +1,34 @@
+<task name="pick_marker_draw_cross_ep1">
+  <description>Use the right arm to grasp the marker in the green cup and draw a black cross mark on the table and then put it into the green cup.</description>
+  <task_objects>
+    <object>marker</object>
+    <object>green cup</object>
+    <object>table</object>
+  </task_objects>
+  <substages>
+    <substage>1. Move the right arm to approach and align with the marker in the green cup.</substage>
+    <substage>2. Grasp the marker.</substage>
+    <substage>3. Move the right arm to position the marker above the table.</substage>
+    <substage>4. Draw a black cross mark on the table.</substage>
+    <substage>5. Move the right arm to align with the green cup.</substage>
+    <substage>6. Release the gripper to put the marker into the green cup.</substage>
+  </substages>
+  <predicates>
+    <predicate>grasped</predicate>
+    <predicate>contact</predicate>
+    <predicate>near</predicate>
+    <predicate>aligned_with</predicate>
+    <predicate>inside</predicate>
+    <predicate>on_top_of</predicate>
+    <predicate>supports</predicate>
+    <predicate>separated_from</predicate>
+    <predicate>left_of</predicate>
+    <predicate>right_of</predicate>
+    <predicate>above</predicate>
+    <predicate>below</predicate>
+    <predicate>in_front_of</predicate>
+    <predicate>behind</predicate>
+    <predicate>writing_on</predicate>
+    <predicate>marked_on</predicate>
+  </predicates>
+</task>

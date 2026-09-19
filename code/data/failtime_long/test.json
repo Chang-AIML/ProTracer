@@ -1,0 +1,1165 @@
+[
+ {
+  "sample": "pour_ball_transfer_cup_episode_19",
+  "task_id": "pour_ball_transfer_cup",
+  "episode": "episode_19",
+  "robot": "aloha",
+  "hdf5": "episodes/pour_ball_transfer_cup_episode_19.hdf5",
+  "verdict": "fail",
+  "onset": 1.145998,
+  "type": [
+   "wrong_object"
+  ],
+  "reason": "Expected: The right arm should align with and grasp the yellow cup.\nObservation: The right gripper closed on the blue cup instead.\nResult: The right arm lifted the empty blue cup.",
+  "avoidance": "Move the right arm to align with the yellow cup instead of the blue cup."
+ },
+ {
+  "sample": "pour_ball_transfer_cup_episode_20",
+  "task_id": "pour_ball_transfer_cup",
+  "episode": "episode_20",
+  "robot": "aloha",
+  "hdf5": "episodes/pour_ball_transfer_cup_episode_20.hdf5",
+  "verdict": "fail",
+  "onset": 47.88,
+  "type": [
+   "translation_error"
+  ],
+  "reason": "Expected: Use the left arm to grasp the ball in the orange bowl\nObservation: left gripper is offset slightly upward relative to the ball\nResult: left gripper closed completely on empty space, leaving the ball behind inside the bowl",
+  "avoidance": "move the left arm slightly downward to align with the ball before grasping"
+ },
+ {
+  "sample": "pour_ball_transfer_cup_episode_21",
+  "task_id": "pour_ball_transfer_cup",
+  "episode": "episode_21",
+  "robot": "aloha",
+  "hdf5": "episodes/pour_ball_transfer_cup_episode_21.hdf5",
+  "verdict": "fail",
+  "onset": 54.301222,
+  "type": [
+   "wrong_placement"
+  ],
+  "reason": "Expected: Move the left arm to place the ball into the blue cup\nObservation: The left arm released the ball into the yellow cup\nResult: The ball was dropped into the yellow cup instead of the blue cup.",
+  "avoidance": "Move the left arm to place the ball into the blue cup"
+ },
+ {
+  "sample": "pour_ball_transfer_cup_episode_23",
+  "task_id": "pour_ball_transfer_cup",
+  "episode": "episode_23",
+  "robot": "aloha",
+  "hdf5": "episodes/pour_ball_transfer_cup_episode_23.hdf5",
+  "verdict": "success"
+ },
+ {
+  "sample": "empty_bowl_insert_block_episode_24",
+  "task_id": "empty_bowl_insert_block",
+  "episode": "episode_24",
+  "robot": "aloha",
+  "hdf5": "episodes/empty_bowl_insert_block_episode_24.hdf5",
+  "verdict": "success"
+ },
+ {
+  "sample": "empty_bowl_insert_block_episode_25",
+  "task_id": "empty_bowl_insert_block",
+  "episode": "episode_25",
+  "robot": "aloha",
+  "hdf5": "episodes/empty_bowl_insert_block_episode_25.hdf5",
+  "verdict": "fail",
+  "onset": 64.698646,
+  "type": [
+   "translation_error"
+  ],
+  "reason": "Expected: Use the left arm to align over and insert the small block into the second slot from the right of the 4 slot block\nObservation: left arm attempted to insert the block into the leftmost slot\nResult: small block collided with the 4 slot block, tipping it over and failing the assembly",
+  "avoidance": "Use the left arm to align over and insert the small block into the second slot from the right of the 4 slot block"
+ },
+ {
+  "sample": "empty_bowl_insert_block_episode_26",
+  "task_id": "empty_bowl_insert_block",
+  "episode": "episode_26",
+  "robot": "aloha",
+  "hdf5": "episodes/empty_bowl_insert_block_episode_26.hdf5",
+  "verdict": "fail",
+  "onset": 54.996332,
+  "type": [
+   "translation_error",
+   "wrong_placement"
+  ],
+  "reason": "Expected: Use the left arm to align over and insert the small block into the second slot from the right of the 4 slot block\nObservation: the left gripper insert the small blcok to the leftmost slot.\nResult: the small block was assembled into the wrong slot",
+  "avoidance": "Use the left arm to align over and insert the small block into the second slot from the right of the 4 slot block"
+ },
+ {
+  "sample": "empty_bowl_insert_block_episode_27",
+  "task_id": "empty_bowl_insert_block",
+  "episode": "episode_27",
+  "robot": "aloha",
+  "hdf5": "episodes/empty_bowl_insert_block_episode_27.hdf5",
+  "verdict": "fail",
+  "onset": 0.0,
+  "type": [
+   "wrong_gripper"
+  ],
+  "reason": "Expected: Move the right arm to grasp the blue blocks\nObservation: The left arm is already grasping a block\nResult: The left arm executes the right arm's designated task, violating the instruction.",
+  "avoidance": "Use the right arm to approach and grasp the blocks in the bowl."
+ },
+ {
+  "sample": "balls_to_egg_carton_episode_13",
+  "task_id": "balls_to_egg_carton",
+  "episode": "episode_13",
+  "robot": "aloha",
+  "hdf5": "episodes/balls_to_egg_carton_episode_13.hdf5",
+  "verdict": "fail",
+  "onset": 47.59,
+  "type": [
+   "translation_error",
+   "wrong_placement"
+  ],
+  "reason": "Eexpected: use the left gripper to move the ball into the empty slot of the egg carton.\nObserved: the left gripper move d the ball to the opening lid of the egg carton\nResult: the ball is not placed into the slot of  the egg carton",
+  "avoidance": "Move the left gripper to align with the empty slot instead of the opening lid"
+ },
+ {
+  "sample": "balls_to_egg_carton_episode_28",
+  "task_id": "balls_to_egg_carton",
+  "episode": "episode_28",
+  "robot": "aloha",
+  "hdf5": "episodes/balls_to_egg_carton_episode_28.hdf5",
+  "verdict": "success"
+ },
+ {
+  "sample": "balls_to_egg_carton_episode_29",
+  "task_id": "balls_to_egg_carton",
+  "episode": "episode_29",
+  "robot": "aloha",
+  "hdf5": "episodes/balls_to_egg_carton_episode_29.hdf5",
+  "verdict": "fail",
+  "onset": 61.142777,
+  "type": [
+   "translation_error"
+  ],
+  "reason": "Expected: use the left gripper to grasp the white left-side ball\nObservation: the left gripper is slightly upward  offset relative to the ball\nResult: the ball is not grasped and is left on the table",
+  "avoidance": "MOve the left griper slightly downward to align with the ball"
+ },
+ {
+  "sample": "balls_to_egg_carton_episode_30",
+  "task_id": "balls_to_egg_carton",
+  "episode": "episode_30",
+  "robot": "aloha",
+  "hdf5": "episodes/balls_to_egg_carton_episode_30.hdf5",
+  "verdict": "fail",
+  "onset": 29.661111,
+  "type": [
+   "wrong_gripper"
+  ],
+  "reason": "Expected: Use the left arm to move to and grasp the left-side balls\nObservation: the right arm moved to the left side and its gripper grasped the blue ball\nResult: the right arm improperly took over the task assigned to the left arm",
+  "avoidance": "Use the left arm instead of the right to move to and grasp the left-side balls"
+ },
+ {
+  "sample": "stack_cup_pyramid_episode_31",
+  "task_id": "stack_cup_pyramid",
+  "episode": "episode_31",
+  "robot": "aloha",
+  "hdf5": "episodes/stack_cup_pyramid_episode_31.hdf5",
+  "verdict": "success"
+ },
+ {
+  "sample": "stack_cup_pyramid_episode_32",
+  "task_id": "stack_cup_pyramid",
+  "episode": "episode_32",
+  "robot": "aloha",
+  "hdf5": "episodes/stack_cup_pyramid_episode_32.hdf5",
+  "verdict": "fail",
+  "onset": 45.715569,
+  "type": [
+   "closing_error"
+  ],
+  "reason": "Expected: Use the right gripper to grasp a single paper cup.\nObservation: The right gripper closed too much, causing it to grasp two stacked cups instead of one.\nResult: The right gripper failed to separate the two paper cups.",
+  "avoidance": "Close the gripper with larger aperture to pick up a single cup instead of two"
+ },
+ {
+  "sample": "stack_cup_pyramid_episode_33",
+  "task_id": "stack_cup_pyramid",
+  "episode": "episode_33",
+  "robot": "aloha",
+  "hdf5": "episodes/stack_cup_pyramid_episode_33.hdf5",
+  "verdict": "fail",
+  "onset": 49.52,
+  "type": [
+   "wrong_placement",
+   "translation_error"
+  ],
+  "reason": "Expected: Use the right gripper to release the cup onto the table.\nObservation: The right gripper released the cup, stacking it on top of another cup in the pyramid.\nResult: The cup was stacked onto the pyramid instead of being placed on the table.",
+  "avoidance": "Use the right gripper to release the cup onto the table."
+ },
+ {
+  "sample": "stack_cup_pyramid_episode_34",
+  "task_id": "stack_cup_pyramid",
+  "episode": "episode_34",
+  "robot": "aloha",
+  "hdf5": "episodes/stack_cup_pyramid_episode_34.hdf5",
+  "verdict": "fail",
+  "onset": 104.393384,
+  "type": [
+   "closing_error"
+  ],
+  "reason": "Expected: use the left arm to transport the cup on top of the pyramid\nObservation: the right gripper sliped the cup during transporting the cup\nResult: The cup dropped off on the table, and tje pyramid is incomplete.",
+  "avoidance": "close the gripper thightly while moving"
+ },
+ {
+  "sample": "bottle_to_bowl_and_cover_episode_36",
+  "task_id": "bottle_to_bowl_and_cover",
+  "episode": "episode_36",
+  "robot": "aloha",
+  "hdf5": "episodes/bottle_to_bowl_and_cover_episode_36.hdf5",
+  "verdict": "fail",
+  "onset": 59.6,
+  "type": [
+   "translation_error"
+  ],
+  "reason": "Expected: release the white object centered over the bottle to mask it. \nObservation: the left gripper released the white object with a translation offset relative to the bottle cap\nResult: The bottle lost balance and fell onto the table.",
+  "avoidance": "Move the left gripper slightly to center the white object perfectly over the bottle before releasing"
+ },
+ {
+  "sample": "bottle_to_bowl_and_cover_episode_37",
+  "task_id": "bottle_to_bowl_and_cover",
+  "episode": "episode_37",
+  "robot": "aloha",
+  "hdf5": "episodes/bottle_to_bowl_and_cover_episode_37.hdf5",
+  "verdict": "success"
+ },
+ {
+  "sample": "bottle_to_bowl_and_cover_episode_38",
+  "task_id": "bottle_to_bowl_and_cover",
+  "episode": "episode_38",
+  "robot": "aloha",
+  "hdf5": "episodes/bottle_to_bowl_and_cover_episode_38.hdf5",
+  "verdict": "fail",
+  "onset": 17.02,
+  "type": [
+   "closing_error"
+  ],
+  "reason": "Expected: Use the right arm to transport the bottle into the bowl.\nObservation: The bottle slipped from the right gripper during transport.\nResult: The bottle was left on the table outside the bowl.",
+  "avoidance": "close the gripper tightly while moving the object"
+ },
+ {
+  "sample": "uncap_marker_draw_recap_episode_39",
+  "task_id": "uncap_marker_draw_recap",
+  "episode": "episode_39",
+  "robot": "aloha",
+  "hdf5": "episodes/uncap_marker_draw_recap_episode_39.hdf5",
+  "verdict": "success"
+ },
+ {
+  "sample": "uncap_marker_draw_recap_episode_41",
+  "task_id": "uncap_marker_draw_recap",
+  "episode": "episode_41",
+  "robot": "aloha",
+  "hdf5": "episodes/uncap_marker_draw_recap_episode_41.hdf5",
+  "verdict": "fail",
+  "onset": 71.6,
+  "type": [
+   "translation_error"
+  ],
+  "reason": "Expected: Use the right arm to release the marker inside the cup.\nObservation: The right gripper dropped the marker with a slight offset to the right, causing it to collide with the rim of the cup.\nResult: The marker struck the cup's rim, tipping the cup over and falling onto the whiteboard.",
+  "avoidance": "Move the right arm to properly center the marker over the cup opening before releasing it"
+ },
+ {
+  "sample": "uncap_marker_draw_recap_episode_42",
+  "task_id": "uncap_marker_draw_recap",
+  "episode": "episode_42",
+  "robot": "aloha",
+  "hdf5": "episodes/uncap_marker_draw_recap_episode_42.hdf5",
+  "verdict": "fail",
+  "onset": 21.08,
+  "type": [
+   "translation_error"
+  ],
+  "reason": "Expected: Move the left arm to align with the cap.\nObservation: The left gripper was offset slightly to the left and failed to grasp the cap.\nResult: The left gripper missed the cap, leaving the marker capped in the right arm.",
+  "avoidance": "Move the left gripper further to the right to align with the cap."
+ },
+ {
+  "sample": "uncap_marker_draw_recap_episode_43",
+  "task_id": "uncap_marker_draw_recap",
+  "episode": "episode_43",
+  "robot": "aloha",
+  "hdf5": "episodes/uncap_marker_draw_recap_episode_43.hdf5",
+  "verdict": "fail",
+  "onset": 5.84,
+  "type": [
+   "wrong_sequence",
+   "closing_error"
+  ],
+  "reason": "Expected: Use the right arm to move the marker towards the left arm.\nObservation: The right arm dropped the marker directly instead of moving it towards the left arm.\nResult: The marker fell and collided with the cup rim, causing it to fall.",
+  "avoidance": "keep the right gripper closed on the marker and move towards the left arm"
+ },
+ {
+  "sample": "yellow_red_blocks_to_bowls_episode_0",
+  "task_id": "yellow_red_blocks_to_bowls",
+  "episode": "episode_0",
+  "robot": "aloha",
+  "hdf5": "episodes/yellow_red_blocks_to_bowls_episode_0.hdf5",
+  "verdict": "fail",
+  "onset": 12.978725,
+  "type": [
+   "wrong_placement"
+  ],
+  "reason": "Expected: The right arm should place the yellow block into the yellow bowl on the left.\nObservation: The right arm released the yellow block into the orange bowl\nResult: The yellow block was placed into the incorrect bowl.",
+  "avoidance": "move the right arm to align the yellow block with the yellow bowl"
+ },
+ {
+  "sample": "yellow_red_blocks_to_bowls_episode_2",
+  "task_id": "yellow_red_blocks_to_bowls",
+  "episode": "episode_2",
+  "robot": "aloha",
+  "hdf5": "episodes/yellow_red_blocks_to_bowls_episode_2.hdf5",
+  "verdict": "fail",
+  "onset": 3.856999,
+  "type": [
+   "wrong_object"
+  ],
+  "reason": "Expected: use the right arm to move to and grasp the yellow block\nObservation: the right gripper closed on the red block\nResult: the right arm grasped the wrong object and placed it into the yellow bowl",
+  "avoidance": "move the right arm to grasp the yellow block instead of the red block"
+ },
+ {
+  "sample": "yellow_red_blocks_to_bowls_episode_4",
+  "task_id": "yellow_red_blocks_to_bowls",
+  "episode": "episode_4",
+  "robot": "aloha",
+  "hdf5": "episodes/yellow_red_blocks_to_bowls_episode_4.hdf5",
+  "verdict": "success"
+ },
+ {
+  "sample": "stabilize_and_insert_block_episode_6",
+  "task_id": "stabilize_and_insert_block",
+  "episode": "episode_6",
+  "robot": "aloha",
+  "hdf5": "episodes/stabilize_and_insert_block_episode_6.hdf5",
+  "verdict": "success"
+ },
+ {
+  "sample": "stabilize_and_insert_block_episode_7",
+  "task_id": "stabilize_and_insert_block",
+  "episode": "episode_7",
+  "robot": "aloha",
+  "hdf5": "episodes/stabilize_and_insert_block_episode_7.hdf5",
+  "verdict": "success"
+ },
+ {
+  "sample": "stabilize_and_insert_block_episode_8",
+  "task_id": "stabilize_and_insert_block",
+  "episode": "episode_8",
+  "robot": "aloha",
+  "hdf5": "episodes/stabilize_and_insert_block_episode_8.hdf5",
+  "verdict": "fail",
+  "onset": 12.697703,
+  "type": [
+   "closing_error"
+  ],
+  "reason": "Expected: Use the left arm to maintain its grasp on the blue block while using the right arm to grasp the small block.\nObservation: The left gripper failed to maintain its grasp to stabilize the blue block, while the right arm simultaneously failed to grasp the small block.\nResult: The small block was never grasped and remained on the table.",
+  "avoidance": "keep holding the blue blocks and grasp the small block once aligned"
+ },
+ {
+  "sample": "stabilize_and_insert_block_episode_9",
+  "task_id": "stabilize_and_insert_block",
+  "episode": "episode_9",
+  "robot": "aloha",
+  "hdf5": "episodes/stabilize_and_insert_block_episode_9.hdf5",
+  "verdict": "fail",
+  "onset": 9.753333,
+  "type": [
+   "translation_error"
+  ],
+  "reason": "Expected: Move the right arm to grasp the small block.\nObservation: The right arm was offset slightly to the right of the small block.\nResult: The small block was never grasped and remained on the table.",
+  "avoidance": "Move the right arm slightly to the left to align with the small block"
+ },
+ {
+  "sample": "balls_to_rack_episode_00",
+  "task_id": "balls_to_rack",
+  "episode": "episode_00",
+  "robot": "so101",
+  "hdf5": "episodes/balls_to_rack_episode_00.hdf5",
+  "verdict": "fail",
+  "onset": 47.241913,
+  "type": [
+   "closing_error"
+  ],
+  "reason": "Expected: The left gripper should close firmly on the yellow ball.\nObservation: The left gripper shifted as it closed, squeezing the ball out.\nResult: The yellow ball stayed on the table and was never transferred.",
+  "avoidance": "Close the left gripper firmly on the yellow ball before transferring it."
+ },
+ {
+  "sample": "balls_to_rack_episode_01",
+  "task_id": "balls_to_rack",
+  "episode": "episode_01",
+  "robot": "so101",
+  "hdf5": "episodes/balls_to_rack_episode_01.hdf5",
+  "verdict": "success"
+ },
+ {
+  "sample": "balls_to_rack_episode_02",
+  "task_id": "balls_to_rack",
+  "episode": "episode_02",
+  "robot": "so101",
+  "hdf5": "episodes/balls_to_rack_episode_02.hdf5",
+  "verdict": "fail",
+  "onset": 76.420925,
+  "type": [
+   "wrong_placement",
+   "translation_error"
+  ],
+  "reason": "Expected: The left gripper should release the last green ball into a cup.\nObservation: The left gripper opened over the carton lid instead of a cup.\nResult: The green ball landed on the lid, outside every cup.",
+  "avoidance": "Align the left gripper with a free cup before releasing the green ball."
+ },
+ {
+  "sample": "balls_to_rack_episode_03",
+  "task_id": "balls_to_rack",
+  "episode": "episode_03",
+  "robot": "so101",
+  "hdf5": "episodes/balls_to_rack_episode_03.hdf5",
+  "verdict": "fail",
+  "onset": 26.520858,
+  "type": [
+   "translation_error",
+   "wrong_placement"
+  ],
+  "reason": "Expected: The right gripper should release the orange ball into a cup.\nObservation: The right gripper opened over the carton lid instead of a cup.\nResult: The orange ball came to rest on the lid, outside every cup.",
+  "avoidance": "Align the right gripper with a free cup before releasing the orange ball."
+ },
+ {
+  "sample": "balls_to_rack_episode_04",
+  "task_id": "balls_to_rack",
+  "episode": "episode_04",
+  "robot": "so101",
+  "hdf5": "episodes/balls_to_rack_episode_04.hdf5",
+  "verdict": "success"
+ },
+ {
+  "sample": "balls_to_rack_episode_05",
+  "task_id": "balls_to_rack",
+  "episode": "episode_05",
+  "robot": "so101",
+  "hdf5": "episodes/balls_to_rack_episode_05.hdf5",
+  "verdict": "success"
+ },
+ {
+  "sample": "balls_to_rack_episode_06",
+  "task_id": "balls_to_rack",
+  "episode": "episode_06",
+  "robot": "so101",
+  "hdf5": "episodes/balls_to_rack_episode_06.hdf5",
+  "verdict": "fail",
+  "onset": 16.853203,
+  "type": [
+   "translation_error"
+  ],
+  "reason": "Expected: The right gripper should close centred on the yellow ball.\nObservation: The right gripper came down offset and closed off-centre on the ball.\nResult: The yellow ball was squeezed out and the gripper closed empty.",
+  "avoidance": "Centre the right gripper on the yellow ball before closing it."
+ },
+ {
+  "sample": "balls_to_rack_episode_07",
+  "task_id": "balls_to_rack",
+  "episode": "episode_07",
+  "robot": "so101",
+  "hdf5": "episodes/balls_to_rack_episode_07.hdf5",
+  "verdict": "fail",
+  "onset": 55.446167,
+  "type": [
+   "wrong_placement",
+   "translation_error"
+  ],
+  "reason": "Expected: The left gripper should release the green ball into a cup.\nObservation: The left gripper opened over the lid before reaching a free cup.\nResult: The green ball fell onto the lid instead of into a slot.",
+  "avoidance": "Align the left gripper with a free cup before releasing the green ball."
+ },
+ {
+  "sample": "balls_to_rack_episode_08",
+  "task_id": "balls_to_rack",
+  "episode": "episode_08",
+  "robot": "so101",
+  "hdf5": "episodes/balls_to_rack_episode_08.hdf5",
+  "verdict": "fail",
+  "onset": 72.620458,
+  "type": [
+   "wrong_placement",
+   "translation_error"
+  ],
+  "reason": "Expected: The left arm should release the pink ball into a free cup.\nObservation: The left gripper opened over the carton rim, not over a cup.\nResult: The pink ball slid off the carton onto the table, outside every slot.",
+  "avoidance": "Align the left arm with a free cup before releasing the pink ball."
+ },
+ {
+  "sample": "balls_to_rack_episode_09",
+  "task_id": "balls_to_rack",
+  "episode": "episode_09",
+  "robot": "so101",
+  "hdf5": "episodes/balls_to_rack_episode_09.hdf5",
+  "verdict": "success"
+ },
+ {
+  "sample": "balls_to_rack_episode_10",
+  "task_id": "balls_to_rack",
+  "episode": "episode_10",
+  "robot": "so101",
+  "hdf5": "episodes/balls_to_rack_episode_10.hdf5",
+  "verdict": "success"
+ },
+ {
+  "sample": "balls_to_rack_episode_11",
+  "task_id": "balls_to_rack",
+  "episode": "episode_11",
+  "robot": "so101",
+  "hdf5": "episodes/balls_to_rack_episode_11.hdf5",
+  "verdict": "fail",
+  "onset": 103.486389,
+  "type": [
+   "translation_error"
+  ],
+  "reason": "Expected: The left gripper should close on the green ball.\nObservation: The left gripper closed offset from the green ball.\nResult: The grasp was empty and the green ball stayed on the table.",
+  "avoidance": "Align the left gripper with the green ball before closing it."
+ },
+ {
+  "sample": "balls_to_rack_episode_12",
+  "task_id": "balls_to_rack",
+  "episode": "episode_12",
+  "robot": "so101",
+  "hdf5": "episodes/balls_to_rack_episode_12.hdf5",
+  "verdict": "fail",
+  "onset": 30.407345,
+  "type": [
+   "translation_error",
+   "wrong_placement"
+  ],
+  "reason": "Expected: The right gripper should release the red ball into a cup.\nObservation: The right gripper opened over the carton edge, not over a cup.\nResult: The red ball slid off the carton onto the table, outside every slot.",
+  "avoidance": "Align the right gripper with a free cup before releasing the red ball."
+ },
+ {
+  "sample": "balls_to_rack_episode_13",
+  "task_id": "balls_to_rack",
+  "episode": "episode_13",
+  "robot": "so101",
+  "hdf5": "episodes/balls_to_rack_episode_13.hdf5",
+  "verdict": "fail",
+  "onset": 16.928948,
+  "type": [
+   "wrong_placement",
+   "translation_error"
+  ],
+  "reason": "Expected: The right gripper should release the orange ball into a cup.\nObservation: The right gripper opened over the carton lid rather than a cup.\nResult: The orange ball settled on the lid and never entered a slot.",
+  "avoidance": "Align the orange ball with a free cup before opening the right gripper."
+ },
+ {
+  "sample": "balls_to_rack_episode_14",
+  "task_id": "balls_to_rack",
+  "episode": "episode_14",
+  "robot": "so101",
+  "hdf5": "episodes/balls_to_rack_episode_14.hdf5",
+  "verdict": "success"
+ },
+ {
+  "sample": "balls_to_rack_episode_15",
+  "task_id": "balls_to_rack",
+  "episode": "episode_15",
+  "robot": "so101",
+  "hdf5": "episodes/balls_to_rack_episode_15.hdf5",
+  "verdict": "fail",
+  "onset": 47.206255,
+  "type": [
+   "translation_error",
+   "wrong_placement"
+  ],
+  "reason": "Expected: The left gripper should release the blue ball into a cup.\nObservation: The left gripper opened over the lid before aligning with a cup.\nResult: The blue ball dropped onto the lid instead of into a slot.",
+  "avoidance": "Align the left gripper with a free cup before releasing the blue ball."
+ },
+ {
+  "sample": "balls_to_rack_episode_16",
+  "task_id": "balls_to_rack",
+  "episode": "episode_16",
+  "robot": "so101",
+  "hdf5": "episodes/balls_to_rack_episode_16.hdf5",
+  "verdict": "success"
+ },
+ {
+  "sample": "balls_to_rack_episode_17",
+  "task_id": "balls_to_rack",
+  "episode": "episode_17",
+  "robot": "so101",
+  "hdf5": "episodes/balls_to_rack_episode_17.hdf5",
+  "verdict": "fail",
+  "onset": 29.206246,
+  "type": [
+   "wrong_placement"
+  ],
+  "reason": "Expected: The right gripper should release the yellow ball into a cup.\nObservation: The right gripper opened over the carton edge, not over a cup.\nResult: The yellow ball slid off the carton onto the table beside it.",
+  "avoidance": "Align the yellow ball with the target cup before opening the right gripper."
+ },
+ {
+  "sample": "balls_to_rack_episode_19",
+  "task_id": "balls_to_rack",
+  "episode": "episode_19",
+  "robot": "so101",
+  "hdf5": "episodes/balls_to_rack_episode_19.hdf5",
+  "verdict": "fail",
+  "onset": 47.833271,
+  "type": [
+   "closing_error"
+  ],
+  "reason": "Expected: The left gripper should hold the blue ball during transfer.\nObservation: The left gripper's hold loosened and the blue ball slipped out.\nResult: The blue ball fell back onto the table, never reaching a cup.",
+  "avoidance": "Keep the left gripper closed on the blue ball throughout the transfer."
+ },
+ {
+  "sample": "block_assembly_episode_00",
+  "task_id": "block_assembly",
+  "episode": "episode_00",
+  "robot": "so101",
+  "hdf5": "episodes/block_assembly_episode_00.hdf5",
+  "verdict": "success"
+ },
+ {
+  "sample": "block_assembly_episode_01",
+  "task_id": "block_assembly",
+  "episode": "episode_01",
+  "robot": "so101",
+  "hdf5": "episodes/block_assembly_episode_01.hdf5",
+  "verdict": "success"
+ },
+ {
+  "sample": "block_assembly_episode_03",
+  "task_id": "block_assembly",
+  "episode": "episode_03",
+  "robot": "so101",
+  "hdf5": "episodes/block_assembly_episode_03.hdf5",
+  "verdict": "fail",
+  "onset": 33.193632,
+  "type": [
+   "wrong_placement",
+   "translation_error"
+  ],
+  "reason": "Expected: The left arm should place the second yellow bar on the stack.\nObservation: The left gripper released the yellow bar one bar-width behind the stack.\nResult: The bar settled on the mat, leaving the top layer unassembled.",
+  "avoidance": "Centre the yellow bar over the red and green bricks before releasing it."
+ },
+ {
+  "sample": "block_assembly_episode_04",
+  "task_id": "block_assembly",
+  "episode": "episode_04",
+  "robot": "so101",
+  "hdf5": "episodes/block_assembly_episode_04.hdf5",
+  "verdict": "success"
+ },
+ {
+  "sample": "block_assembly_episode_05",
+  "task_id": "block_assembly",
+  "episode": "episode_05",
+  "robot": "so101",
+  "hdf5": "episodes/block_assembly_episode_05.hdf5",
+  "verdict": "fail",
+  "onset": 38.558143,
+  "type": [
+   "wrong_placement",
+   "translation_error"
+  ],
+  "reason": "Expected: The left arm should seat the second yellow bar on the four studs.\nObservation: The left gripper released the yellow bar off the four studs.\nResult: The bar did not seat and the stack collapsed on the mat.",
+  "avoidance": "Align the yellow bar with the stack's four studs before lowering it."
+ },
+ {
+  "sample": "block_assembly_episode_06",
+  "task_id": "block_assembly",
+  "episode": "episode_06",
+  "robot": "so101",
+  "hdf5": "episodes/block_assembly_episode_06.hdf5",
+  "verdict": "success"
+ },
+ {
+  "sample": "block_assembly_episode_07",
+  "task_id": "block_assembly",
+  "episode": "episode_07",
+  "robot": "so101",
+  "hdf5": "episodes/block_assembly_episode_07.hdf5",
+  "verdict": "fail",
+  "onset": 7.015,
+  "type": [
+   "wrong_placement"
+  ],
+  "reason": "Expected: The left arm should seat the red brick at one end of the yellow bar.\nObservation: The left gripper pressed the red brick onto the two middle studs.\nResult: The red brick ended centred, which violates the assembly rule.",
+  "avoidance": "Seat the red brick on the two studs at one end of the yellow bar."
+ },
+ {
+  "sample": "block_assembly_episode_08",
+  "task_id": "block_assembly",
+  "episode": "episode_08",
+  "robot": "so101",
+  "hdf5": "episodes/block_assembly_episode_08.hdf5",
+  "verdict": "fail",
+  "onset": 3.543107,
+  "type": [
+   "wrong_sequence"
+  ],
+  "reason": "Expected: The left arm should grasp the green brick to stack on the yellow bar.\nObservation: The left gripper closed on the second yellow bar instead.\nResult: That bar ended stacked on the base bar, violating the stacking order.",
+  "avoidance": "Grasp the green brick with the left gripper and stack it on the yellow bar."
+ },
+ {
+  "sample": "block_assembly_episode_09",
+  "task_id": "block_assembly",
+  "episode": "episode_09",
+  "robot": "so101",
+  "hdf5": "episodes/block_assembly_episode_09.hdf5",
+  "verdict": "fail",
+  "onset": 3.884564,
+  "type": [
+   "wrong_sequence",
+   "wrong_object"
+  ],
+  "reason": "Expected: The right arm should first seat a small brick on the yellow base bar.\nObservation: The right gripper capped one yellow bar with the other one first.\nResult: The two bars ended joined directly, violating the stacking order.",
+  "avoidance": "Stack the two small bricks on the yellow bar before capping with the second."
+ },
+ {
+  "sample": "block_assembly_episode_10",
+  "task_id": "block_assembly",
+  "episode": "episode_10",
+  "robot": "so101",
+  "hdf5": "episodes/block_assembly_episode_10.hdf5",
+  "verdict": "fail",
+  "onset": 16.207467,
+  "type": [
+   "wrong_placement"
+  ],
+  "reason": "Expected: The right arm should seat the green brick on the bar's free half.\nObservation: The right gripper released the green brick onto the other yellow bar.\nResult: The bricks ended on separate bars, violating the stacking order.",
+  "avoidance": "Seat the green brick on the same yellow bar that carries the red brick."
+ },
+ {
+  "sample": "block_assembly_episode_11",
+  "task_id": "block_assembly",
+  "episode": "episode_11",
+  "robot": "so101",
+  "hdf5": "episodes/block_assembly_episode_11.hdf5",
+  "verdict": "success"
+ },
+ {
+  "sample": "block_assembly_episode_12",
+  "task_id": "block_assembly",
+  "episode": "episode_12",
+  "robot": "so101",
+  "hdf5": "episodes/block_assembly_episode_12.hdf5",
+  "verdict": "success"
+ },
+ {
+  "sample": "block_assembly_episode_13",
+  "task_id": "block_assembly",
+  "episode": "episode_13",
+  "robot": "so101",
+  "hdf5": "episodes/block_assembly_episode_13.hdf5",
+  "verdict": "success"
+ },
+ {
+  "sample": "blocks_to_bowls_episode_00",
+  "task_id": "blocks_to_bowls",
+  "episode": "episode_00",
+  "robot": "so101",
+  "hdf5": "episodes/blocks_to_bowls_episode_00.hdf5",
+  "verdict": "success"
+ },
+ {
+  "sample": "blocks_to_bowls_episode_01",
+  "task_id": "blocks_to_bowls",
+  "episode": "episode_01",
+  "robot": "so101",
+  "hdf5": "episodes/blocks_to_bowls_episode_01.hdf5",
+  "verdict": "fail",
+  "onset": 62.713544,
+  "type": [
+   "orientation_error",
+   "translation_error"
+  ],
+  "reason": "Expected: The right arm should align with the green cube and grasp it.\nObservation: The right gripper closed before aligning with the green cube.\nResult: The grasp failed and the green cube stayed on the table.",
+  "avoidance": "Align the right gripper with the green cube before closing it."
+ },
+ {
+  "sample": "blocks_to_bowls_episode_02",
+  "task_id": "blocks_to_bowls",
+  "episode": "episode_02",
+  "robot": "so101",
+  "hdf5": "episodes/blocks_to_bowls_episode_02.hdf5",
+  "verdict": "success"
+ },
+ {
+  "sample": "blocks_to_bowls_episode_03",
+  "task_id": "blocks_to_bowls",
+  "episode": "episode_03",
+  "robot": "so101",
+  "hdf5": "episodes/blocks_to_bowls_episode_03.hdf5",
+  "verdict": "success"
+ },
+ {
+  "sample": "blocks_to_bowls_episode_04",
+  "task_id": "blocks_to_bowls",
+  "episode": "episode_04",
+  "robot": "so101",
+  "hdf5": "episodes/blocks_to_bowls_episode_04.hdf5",
+  "verdict": "fail",
+  "onset": 39.725431,
+  "type": [
+   "wrong_placement"
+  ],
+  "reason": "Expected: The left arm should drop the orange cube into the orange bowl.\nObservation: The left arm released the orange cube over the yellow bowl.\nResult: The orange cube ended up in the yellow bowl, so the colours do not match.",
+  "avoidance": "Release the orange cube over the orange bowl, not the yellow bowl."
+ },
+ {
+  "sample": "cube_stack_episode_00",
+  "task_id": "cube_stack",
+  "episode": "episode_00",
+  "robot": "so101",
+  "hdf5": "episodes/cube_stack_episode_00.hdf5",
+  "verdict": "success"
+ },
+ {
+  "sample": "cube_stack_episode_01",
+  "task_id": "cube_stack",
+  "episode": "episode_01",
+  "robot": "so101",
+  "hdf5": "episodes/cube_stack_episode_01.hdf5",
+  "verdict": "success"
+ },
+ {
+  "sample": "cube_stack_episode_02",
+  "task_id": "cube_stack",
+  "episode": "episode_02",
+  "robot": "so101",
+  "hdf5": "episodes/cube_stack_episode_02.hdf5",
+  "verdict": "fail",
+  "onset": 25.89472,
+  "type": [
+   "translation_error",
+   "wrong_placement"
+  ],
+  "reason": "Expected: The right arm should place the red cube on top of the stack.\nObservation: The right gripper opened while the red cube was beside the stack's top.\nResult: The red cube fell onto the table and the stack stayed two cubes high.",
+  "avoidance": "Align the red cube over the stack before opening the right gripper."
+ },
+ {
+  "sample": "cube_stack_episode_03",
+  "task_id": "cube_stack",
+  "episode": "episode_03",
+  "robot": "so101",
+  "hdf5": "episodes/cube_stack_episode_03.hdf5",
+  "verdict": "fail",
+  "onset": 2.560555,
+  "type": [
+   "translation_error"
+  ],
+  "reason": "Expected: The right arm should grasp the yellow cube and lift it.\nObservation: The right gripper closed offset from the yellow cube.\nResult: The gripper came up empty and no cube reached the stack.",
+  "avoidance": "Line the right gripper up with the yellow cube before closing it."
+ },
+ {
+  "sample": "cube_stack_episode_04",
+  "task_id": "cube_stack",
+  "episode": "episode_04",
+  "robot": "so101",
+  "hdf5": "episodes/cube_stack_episode_04.hdf5",
+  "verdict": "fail",
+  "onset": 13.159259,
+  "type": [
+   "translation_error"
+  ],
+  "reason": "Expected: The right arm should place the green cube on top of the stack.\nObservation: The right gripper released the green cube off the stack's top face.\nResult: The stack toppled, leaving all three cubes lying on the table.",
+  "avoidance": "Align the green cube over the stack before releasing it."
+ },
+ {
+  "sample": "cube_stack_episode_05",
+  "task_id": "cube_stack",
+  "episode": "episode_05",
+  "robot": "so101",
+  "hdf5": "episodes/cube_stack_episode_05.hdf5",
+  "verdict": "success"
+ },
+ {
+  "sample": "cube_stack_episode_06",
+  "task_id": "cube_stack",
+  "episode": "episode_06",
+  "robot": "so101",
+  "hdf5": "episodes/cube_stack_episode_06.hdf5",
+  "verdict": "fail",
+  "onset": 17.757777,
+  "type": [
+   "translation_error"
+  ],
+  "reason": "Expected: The right arm should place the green cube on top of the stack.\nObservation: The right gripper released the green cube against the side of the stack.\nResult: The falling green cube knocked the stack over onto the table.",
+  "avoidance": "Slow down and align the green cube over the stack before releasing it."
+ },
+ {
+  "sample": "cube_stack_episode_07",
+  "task_id": "cube_stack",
+  "episode": "episode_07",
+  "robot": "so101",
+  "hdf5": "episodes/cube_stack_episode_07.hdf5",
+  "verdict": "fail",
+  "onset": 20.876419,
+  "type": [
+   "wrong_sequence",
+   "wrong_placement"
+  ],
+  "reason": "Expected: The right arm should place the green cube on the two-cube tower.\nObservation: The right gripper released the green cube on the loose red cube, not the tower.\nResult: A separate green-on-red pile formed and the tower stayed two cubes high.",
+  "avoidance": "Release the cube on the two-cube tower, not on the loose red cube."
+ },
+ {
+  "sample": "cube_stack_episode_08",
+  "task_id": "cube_stack",
+  "episode": "episode_08",
+  "robot": "so101",
+  "hdf5": "episodes/cube_stack_episode_08.hdf5",
+  "verdict": "success"
+ },
+ {
+  "sample": "cube_stack_episode_09",
+  "task_id": "cube_stack",
+  "episode": "episode_09",
+  "robot": "so101",
+  "hdf5": "episodes/cube_stack_episode_09.hdf5",
+  "verdict": "fail",
+  "onset": 45.084753,
+  "type": [
+   "translation_error",
+   "orientation_error"
+  ],
+  "reason": "Expected: The right arm should place the purple cube on top of the tower.\nObservation: The right gripper opened with the purple cube past the tower's top, askew.\nResult: The purple cube dropped onto the table and the tower stayed standing.",
+  "avoidance": "Align the purple cube over the tower before opening the right gripper."
+ },
+ {
+  "sample": "cube_stack_episode_10",
+  "task_id": "cube_stack",
+  "episode": "episode_10",
+  "robot": "so101",
+  "hdf5": "episodes/cube_stack_episode_10.hdf5",
+  "verdict": "success"
+ },
+ {
+  "sample": "cube_stack_episode_11",
+  "task_id": "cube_stack",
+  "episode": "episode_11",
+  "robot": "so101",
+  "hdf5": "episodes/cube_stack_episode_11.hdf5",
+  "verdict": "success"
+ },
+ {
+  "sample": "cube_stack_episode_12",
+  "task_id": "cube_stack",
+  "episode": "episode_12",
+  "robot": "so101",
+  "hdf5": "episodes/cube_stack_episode_12.hdf5",
+  "verdict": "fail",
+  "onset": 35.055738,
+  "type": [
+   "translation_error"
+  ],
+  "reason": "Expected: The right arm should place the last purple cube on top of the tower.\nObservation: The right gripper opened with the purple cube offset from the tower's top.\nResult: The cube fell to the table and the tower collapsed as the arm withdrew.",
+  "avoidance": "Align the last purple cube over the tower before opening the right gripper."
+ },
+ {
+  "sample": "cube_stack_episode_14",
+  "task_id": "cube_stack",
+  "episode": "episode_14",
+  "robot": "so101",
+  "hdf5": "episodes/cube_stack_episode_14.hdf5",
+  "verdict": "fail",
+  "onset": 40.775418,
+  "type": [
+   "translation_error",
+   "orientation_error"
+  ],
+  "reason": "Expected: The right arm should place the last purple cube on top of the tower.\nObservation: The right gripper released the purple cube misaligned over the tower's top.\nResult: The tower toppled, leaving all four cubes lying on the table.",
+  "avoidance": "Align the purple cube with the tower's top before releasing it."
+ },
+ {
+  "sample": "cube_stack_episode_15",
+  "task_id": "cube_stack",
+  "episode": "episode_15",
+  "robot": "so101",
+  "hdf5": "episodes/cube_stack_episode_15.hdf5",
+  "verdict": "success"
+ },
+ {
+  "sample": "cube_stack_episode_16",
+  "task_id": "cube_stack",
+  "episode": "episode_16",
+  "robot": "so101",
+  "hdf5": "episodes/cube_stack_episode_16.hdf5",
+  "verdict": "success"
+ },
+ {
+  "sample": "cube_stack_episode_17",
+  "task_id": "cube_stack",
+  "episode": "episode_17",
+  "robot": "so101",
+  "hdf5": "episodes/cube_stack_episode_17.hdf5",
+  "verdict": "success"
+ },
+ {
+  "sample": "cube_stack_episode_18",
+  "task_id": "cube_stack",
+  "episode": "episode_18",
+  "robot": "so101",
+  "hdf5": "episodes/cube_stack_episode_18.hdf5",
+  "verdict": "success"
+ },
+ {
+  "sample": "cube_stack_episode_19",
+  "task_id": "cube_stack",
+  "episode": "episode_19",
+  "robot": "so101",
+  "hdf5": "episodes/cube_stack_episode_19.hdf5",
+  "verdict": "success"
+ },
+ {
+  "sample": "handover_episode_00",
+  "task_id": "handover",
+  "episode": "episode_00",
+  "robot": "so101",
+  "hdf5": "episodes/handover_episode_00.hdf5",
+  "verdict": "success"
+ },
+ {
+  "sample": "handover_episode_01",
+  "task_id": "handover",
+  "episode": "episode_01",
+  "robot": "so101",
+  "hdf5": "episodes/handover_episode_01.hdf5",
+  "verdict": "fail",
+  "onset": 25.72,
+  "type": [
+   "translation_error"
+  ],
+  "reason": "Expected: The right arm should take the block from the left arm.\nObservation: The right gripper closed beside the block instead of around it.\nResult: The block fell onto the table when the left gripper opened.",
+  "avoidance": "Align the right gripper with the block before closing it."
+ },
+ {
+  "sample": "handover_episode_02",
+  "task_id": "handover",
+  "episode": "episode_02",
+  "robot": "so101",
+  "hdf5": "episodes/handover_episode_02.hdf5",
+  "verdict": "fail",
+  "onset": 49.319987,
+  "type": [
+   "open_error"
+  ],
+  "reason": "Expected: The left gripper should open once the right gripper has the block.\nObservation: The left gripper stayed shut on the block and never released it.\nResult: The block was never transferred to the right arm.",
+  "avoidance": "Open the left gripper once the right gripper has closed on the block."
+ },
+ {
+  "sample": "handover_episode_03",
+  "task_id": "handover",
+  "episode": "episode_03",
+  "robot": "so101",
+  "hdf5": "episodes/handover_episode_03.hdf5",
+  "verdict": "fail",
+  "onset": 19.486666,
+  "type": [
+   "wrong_placement",
+   "translation_error"
+  ],
+  "reason": "Expected: The right arm should release the toy fries carton over the bowl.\nObservation: The gripper opened while the carton was still short of the bowl.\nResult: The carton landed on its side on the table beside the bowl.",
+  "avoidance": "Centre the toy fries carton over the bowl before opening the gripper."
+ },
+ {
+  "sample": "handover_episode_04",
+  "task_id": "handover",
+  "episode": "episode_04",
+  "robot": "so101",
+  "hdf5": "episodes/handover_episode_04.hdf5",
+  "verdict": "success"
+ },
+ {
+  "sample": "handover_episode_05",
+  "task_id": "handover",
+  "episode": "episode_05",
+  "robot": "so101",
+  "hdf5": "episodes/handover_episode_05.hdf5",
+  "verdict": "fail",
+  "onset": 24.56574,
+  "type": [
+   "translation_error"
+  ],
+  "reason": "Expected: The right arm should take the block from the left arm.\nObservation: The right gripper closed past the block instead of around it.\nResult: The block dropped onto the table beside the bowl when the left gripper opened.",
+  "avoidance": "Align the right arm with the block before closing the gripper."
+ },
+ {
+  "sample": "handover_episode_06",
+  "task_id": "handover",
+  "episode": "episode_06",
+  "robot": "so101",
+  "hdf5": "episodes/handover_episode_06.hdf5",
+  "verdict": "success"
+ },
+ {
+  "sample": "handover_episode_07",
+  "task_id": "handover",
+  "episode": "episode_07",
+  "robot": "so101",
+  "hdf5": "episodes/handover_episode_07.hdf5",
+  "verdict": "success"
+ },
+ {
+  "sample": "handover_episode_08",
+  "task_id": "handover",
+  "episode": "episode_08",
+  "robot": "so101",
+  "hdf5": "episodes/handover_episode_08.hdf5",
+  "verdict": "fail",
+  "onset": 25.93327,
+  "type": [
+   "translation_error"
+  ],
+  "reason": "Expected: The left arm should take the toy fries carton from the right arm.\nObservation: The left gripper closed on air, offset from the carton.\nResult: The carton fell onto the table and never reached the left arm.",
+  "avoidance": "Align the left gripper with the toy fries carton before closing it."
+ },
+ {
+  "sample": "handover_episode_09",
+  "task_id": "handover",
+  "episode": "episode_09",
+  "robot": "so101",
+  "hdf5": "episodes/handover_episode_09.hdf5",
+  "verdict": "fail",
+  "onset": 32.661909,
+  "type": [
+   "closing_error"
+  ],
+  "reason": "Expected: The left arm should carry the block to the bowl.\nObservation: The left gripper opened partway through the carry.\nResult: The block fell onto the table beside the bowl.",
+  "avoidance": "Keep the left gripper closed on the block until it is above the bowl."
+ },
+ {
+  "sample": "handover_episode_10",
+  "task_id": "handover",
+  "episode": "episode_10",
+  "robot": "so101",
+  "hdf5": "episodes/handover_episode_10.hdf5",
+  "verdict": "fail",
+  "onset": 45.233333,
+  "type": [
+   "wrong_sequence"
+  ],
+  "reason": "Expected: The right arm should also pass the block across.\nObservation: The right gripper never closed on the block.\nResult: The block stayed on the passer's side, with only two items in the bowl.",
+  "avoidance": "Grasp the block with the right arm and pass it across as well."
+ },
+ {
+  "sample": "handover_episode_12",
+  "task_id": "handover",
+  "episode": "episode_12",
+  "robot": "so101",
+  "hdf5": "episodes/handover_episode_12.hdf5",
+  "verdict": "success"
+ },
+ {
+  "sample": "handover_episode_13",
+  "task_id": "handover",
+  "episode": "episode_13",
+  "robot": "so101",
+  "hdf5": "episodes/handover_episode_13.hdf5",
+  "verdict": "fail",
+  "onset": 10.430853,
+  "type": [
+   "translation_error",
+   "orientation_error"
+  ],
+  "reason": "Expected: The right arm should take the block from the left arm.\nObservation: The right gripper closed offset and unsquared, catching only the block's edge.\nResult: The block fell onto the table beside the barrier's base.",
+  "avoidance": "Align the right arm square to the block's faces before closing the gripper."
+ },
+ {
+  "sample": "handover_episode_14",
+  "task_id": "handover",
+  "episode": "episode_14",
+  "robot": "so101",
+  "hdf5": "episodes/handover_episode_14.hdf5",
+  "verdict": "success"
+ }
+]

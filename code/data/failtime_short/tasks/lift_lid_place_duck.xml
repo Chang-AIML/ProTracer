@@ -1,0 +1,34 @@
+<task name="lift_lid_place_duck">
+  <description>Use the right arm to lift the lid off the pot, then use the left arm to place the green duck inside.</description>
+  <task_objects>
+    <object>lid</object>
+    <object>pot</object>
+    <object>green duck</object>
+  </task_objects>
+  <substages>
+    <substage>1. Move the right arm to approach and align with the lid of the pot.</substage>
+    <substage>2. Grasp the lid with the right arm.</substage>
+    <substage>3. Lift the lid off the pot using the right arm.</substage>
+    <substage>4. Move the left arm to approach and align with the green duck.</substage>
+    <substage>5. Grasp the green duck with the left arm.</substage>
+    <substage>6. Move the left arm to align with the open pot.</substage>
+    <substage>7. Release the gripper to place the green duck inside the pot.</substage>
+  </substages>
+  <predicates>
+    <predicate>grasped</predicate>
+    <predicate>contact</predicate>
+    <predicate>near</predicate>
+    <predicate>aligned_with</predicate>
+    <predicate>inside</predicate>
+    <predicate>on_top_of</predicate>
+    <predicate>supports</predicate>
+    <predicate>separated_from</predicate>
+    <predicate>left_of</predicate>
+    <predicate>right_of</predicate>
+    <predicate>above</predicate>
+    <predicate>below</predicate>
+    <predicate>in_front_of</predicate>
+    <predicate>behind</predicate>
+    <predicate>lid_off</predicate>
+  </predicates>
+</task>

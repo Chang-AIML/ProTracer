@@ -1,0 +1,36 @@
+<task name="pull_bottom_drawer_put_duck_into_pot">
+  <description>Use the right arm to pull the bottom drawer, then use the left arm to take out the orange duck in it and put the orange duck into the red pot.</description>
+  <task_objects>
+    <object>bottom drawer</object>
+    <object>orange duck</object>
+    <object>red pot</object>
+  </task_objects>
+  <substages>
+    <substage>1. Move the right arm to approach and align with the bottom drawer.</substage>
+    <substage>2. Grasp the bottom drawer with the right arm.</substage>
+    <substage>3. Pull the bottom drawer open using the right arm.</substage>
+    <substage>4. Move the left arm to approach and align with the orange duck inside the bottom drawer.</substage>
+    <substage>5. Grasp the orange duck with the left arm.</substage>
+    <substage>6. Move the left arm to align with the red pot.</substage>
+    <substage>7. Release the gripper to place the orange duck into the red pot.</substage>
+  </substages>
+  <predicates>
+    <predicate>grasped</predicate>
+    <predicate>contact</predicate>
+    <predicate>near</predicate>
+    <predicate>aligned_with</predicate>
+    <predicate>inside</predicate>
+    <predicate>on_top_of</predicate>
+    <predicate>supports</predicate>
+    <predicate>separated_from</predicate>
+    <predicate>left_of</predicate>
+    <predicate>right_of</predicate>
+    <predicate>above</predicate>
+    <predicate>below</predicate>
+    <predicate>in_front_of</predicate>
+    <predicate>behind</predicate>
+    <predicate>open</predicate>
+    <predicate>closed</predicate>
+    <predicate>partly_open</predicate>
+  </predicates>
+</task>

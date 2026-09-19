@@ -1,0 +1,43 @@
+<task name="pick_orange_block_place_into_microwave">
+  <description>Use the right arm to place the orange block into the bowl. Then, use the left arm to open the microwave door, use the right arm to put the bowl into the microwave, and finally, close the microwave door.</description>
+  <task_objects>
+    <object>orange block</object>
+    <object>bowl</object>
+    <object>microwave door</object>
+    <object>microwave</object>
+  </task_objects>
+  <substages>
+    <substage>1. Move the right arm to approach and align with the orange block.</substage>
+    <substage>2. Grasp the orange block with the right arm.</substage>
+    <substage>3. Move the right arm to align with the bowl.</substage>
+    <substage>4. Release the gripper to place the orange block into the bowl.</substage>
+    <substage>5. Move the left arm to approach and align with the microwave door handle.</substage>
+    <substage>6. Grasp the microwave door handle with the left arm.</substage>
+    <substage>7. Pull the microwave door open using the left arm.</substage>
+    <substage>8. Move the right arm to approach and align with the bowl.</substage>
+    <substage>9. Grasp the bowl with the right arm.</substage>
+    <substage>10. Move the right arm to align with the open microwave.</substage>
+    <substage>11. Release the gripper to place the bowl into the microwave.</substage>
+    <substage>12. Move the left arm to approach and align with the microwave door.</substage>
+    <substage>13. Push the microwave door closed using the left arm.</substage>
+  </substages>
+  <predicates>
+    <predicate>grasped</predicate>
+    <predicate>contact</predicate>
+    <predicate>near</predicate>
+    <predicate>aligned_with</predicate>
+    <predicate>inside</predicate>
+    <predicate>on_top_of</predicate>
+    <predicate>supports</predicate>
+    <predicate>separated_from</predicate>
+    <predicate>left_of</predicate>
+    <predicate>right_of</predicate>
+    <predicate>above</predicate>
+    <predicate>below</predicate>
+    <predicate>in_front_of</predicate>
+    <predicate>behind</predicate>
+    <predicate>open</predicate>
+    <predicate>closed</predicate>
+    <predicate>partly_open</predicate>
+  </predicates>
+</task>

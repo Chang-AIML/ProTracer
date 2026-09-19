@@ -1,0 +1,35 @@
+<task name="put_two_objects_into_plate_and_box">
+  <description>Use the right arm to put the doll on the blue plate and the left arm to put the stapler on the box.</description>
+  <task_objects>
+    <object>doll</object>
+    <object>blue plate</object>
+    <object>stapler</object>
+    <object>box</object>
+  </task_objects>
+  <substages>
+    <substage>1. Move the right arm to approach and align with the doll.</substage>
+    <substage>2. Grasp the doll with the right arm.</substage>
+    <substage>3. Move the right arm to align with the blue plate.</substage>
+    <substage>4. Release the gripper to place the doll on the blue plate.</substage>
+    <substage>5. Move the left arm to approach and align with the stapler.</substage>
+    <substage>6. Grasp the stapler with the left arm.</substage>
+    <substage>7. Move the left arm to align with the box.</substage>
+    <substage>8. Release the gripper to place the stapler on the box.</substage>
+  </substages>
+  <predicates>
+    <predicate>grasped</predicate>
+    <predicate>contact</predicate>
+    <predicate>near</predicate>
+    <predicate>aligned_with</predicate>
+    <predicate>inside</predicate>
+    <predicate>on_top_of</predicate>
+    <predicate>supports</predicate>
+    <predicate>separated_from</predicate>
+    <predicate>left_of</predicate>
+    <predicate>right_of</predicate>
+    <predicate>above</predicate>
+    <predicate>below</predicate>
+    <predicate>in_front_of</predicate>
+    <predicate>behind</predicate>
+  </predicates>
+</task>

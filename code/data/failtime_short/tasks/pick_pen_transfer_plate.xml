@@ -1,0 +1,33 @@
+<task name="pick_pen_transfer_plate">
+  <description>Use the left arm to grasp the pen, transfer it to the right arm and then place it in the blue plate.</description>
+  <task_objects>
+    <object>pen</object>
+    <object>blue plate</object>
+  </task_objects>
+  <substages>
+    <substage>1. Move the left arm to approach and align with the pen.</substage>
+    <substage>2. Grasp the pen with the left arm.</substage>
+    <substage>3. Move the left arm to a transfer position.</substage>
+    <substage>4. Move the right arm to approach and align with the pen held by the left arm.</substage>
+    <substage>5. Grasp the pen with the right arm.</substage>
+    <substage>6. Release the pen from the left arm.</substage>
+    <substage>7. Move the right arm to align with the blue plate.</substage>
+    <substage>8. Release the gripper to place the pen in the blue plate.</substage>
+  </substages>
+  <predicates>
+    <predicate>grasped</predicate>
+    <predicate>contact</predicate>
+    <predicate>near</predicate>
+    <predicate>aligned_with</predicate>
+    <predicate>inside</predicate>
+    <predicate>on_top_of</predicate>
+    <predicate>supports</predicate>
+    <predicate>separated_from</predicate>
+    <predicate>left_of</predicate>
+    <predicate>right_of</predicate>
+    <predicate>above</predicate>
+    <predicate>below</predicate>
+    <predicate>in_front_of</predicate>
+    <predicate>behind</predicate>
+  </predicates>
+</task>

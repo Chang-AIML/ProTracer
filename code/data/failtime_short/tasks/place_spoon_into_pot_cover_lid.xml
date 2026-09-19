@@ -1,0 +1,35 @@
+<task name="place_spoon_into_pot_cover_lid">
+  <description>Use thw left arm to place the green spoon into the red pot, and then use the right arm to grasp the lid and cover the pot.</description>
+  <task_objects>
+    <object>green spoon</object>
+    <object>red pot</object>
+    <object>lid</object>
+  </task_objects>
+  <substages>
+    <substage>1. Move the left arm to approach and align with the green spoon.</substage>
+    <substage>2. Grasp the green spoon with the left arm.</substage>
+    <substage>3. Move the left arm to align with the red pot.</substage>
+    <substage>4. Release the gripper to place the green spoon into the red pot.</substage>
+    <substage>5. Move the right arm to approach and align with the lid.</substage>
+    <substage>6. Grasp the lid with the right arm.</substage>
+    <substage>7. Move the right arm to align with the red pot.</substage>
+    <substage>8. Release the gripper to cover the red pot with the lid.</substage>
+  </substages>
+  <predicates>
+    <predicate>grasped</predicate>
+    <predicate>contact</predicate>
+    <predicate>near</predicate>
+    <predicate>aligned_with</predicate>
+    <predicate>inside</predicate>
+    <predicate>on_top_of</predicate>
+    <predicate>supports</predicate>
+    <predicate>separated_from</predicate>
+    <predicate>left_of</predicate>
+    <predicate>right_of</predicate>
+    <predicate>above</predicate>
+    <predicate>below</predicate>
+    <predicate>in_front_of</predicate>
+    <predicate>behind</predicate>
+    <predicate>lid_off</predicate>
+  </predicates>
+</task>

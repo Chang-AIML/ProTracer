@@ -1,0 +1,29 @@
+<task name="pick_green_cube_put_basket">
+  <description>Use the left arm to pick up the green cube and place it into the woven basket.</description>
+  <task_objects>
+    <object>green cube</object>
+    <object>woven basket</object>
+  </task_objects>
+  <substages>
+    <substage>1. Move the left arm to approach and align with the green cube.</substage>
+    <substage>2. Grasp the green cube.</substage>
+    <substage>3. Move the left arm to align with the woven basket.</substage>
+    <substage>4. Release the gripper to place the green cube into the woven basket.</substage>
+  </substages>
+  <predicates>
+    <predicate>grasped</predicate>
+    <predicate>contact</predicate>
+    <predicate>near</predicate>
+    <predicate>aligned_with</predicate>
+    <predicate>inside</predicate>
+    <predicate>on_top_of</predicate>
+    <predicate>supports</predicate>
+    <predicate>separated_from</predicate>
+    <predicate>left_of</predicate>
+    <predicate>right_of</predicate>
+    <predicate>above</predicate>
+    <predicate>below</predicate>
+    <predicate>in_front_of</predicate>
+    <predicate>behind</predicate>
+  </predicates>
+</task>

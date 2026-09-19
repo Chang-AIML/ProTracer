@@ -1,0 +1,30 @@
+<task name="pull_open_drawer">
+  <description>Use the left arm to pull open the top drawer.</description>
+  <task_objects>
+    <object>top drawer</object>
+  </task_objects>
+  <substages>
+    <substage>1. Move the left arm to approach and align with the handle of the top drawer.</substage>
+    <substage>2. Grasp the handle of the top drawer with the left arm.</substage>
+    <substage>3. Pull the top drawer open using the left arm.</substage>
+  </substages>
+  <predicates>
+    <predicate>grasped</predicate>
+    <predicate>contact</predicate>
+    <predicate>near</predicate>
+    <predicate>aligned_with</predicate>
+    <predicate>inside</predicate>
+    <predicate>on_top_of</predicate>
+    <predicate>supports</predicate>
+    <predicate>separated_from</predicate>
+    <predicate>left_of</predicate>
+    <predicate>right_of</predicate>
+    <predicate>above</predicate>
+    <predicate>below</predicate>
+    <predicate>in_front_of</predicate>
+    <predicate>behind</predicate>
+    <predicate>open</predicate>
+    <predicate>closed</predicate>
+    <predicate>partly_open</predicate>
+  </predicates>
+</task>
